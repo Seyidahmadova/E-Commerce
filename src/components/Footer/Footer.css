@@ -1,9 +1,10 @@
 .footer {
-    background-color: #E7E4F8;
+    /* background-color: #E7E4F8; */
     width: 100%;
     bottom: 0;
     right: 0;
     position: absolute;
+    background-color: #EEEFFB;
 }
 
 .f-pages {
@@ -83,4 +84,21 @@
 
 .f-copy {
     display: flex;
+    width: 60%;
+    padding: 0 20%;
+    justify-content: space-between;
+    margin: 0 auto;
+    background-color: #E7E4F8;
+    align-items: center;
 }
+
+.f-copy>p {
+    font-size: 12px;
+    color: gray;
+}
+
+.fc-medias>ul {
+    display: flex;
+    color: #0F124B;
+}
+

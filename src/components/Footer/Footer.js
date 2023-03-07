@@ -45,7 +45,7 @@ export default function Footer() {
                 </div>
             </div>
             <div className="f-copy">
-                <p>CEAT@All Rights Reserved</p>
+                <p>CEAT&copy;All Rights Reserved</p>
                 <div className="fc-medias">
                     <ul>
                         <ol><BsFacebook/></ol>
