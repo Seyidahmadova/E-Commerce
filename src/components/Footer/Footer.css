@@ -1,0 +1,86 @@
+.footer {
+    background-color: #E7E4F8;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+}
+
+.f-pages {
+    width: 70%;
+    display: flex;
+    margin: 0 auto;
+    padding: 5% 0;
+    justify-content: space-between;
+}
+
+.fp-mail {
+    text-align: left;
+    width: 42%;
+    margin-right: 5%;
+}
+
+.fp-mail>p {
+    color: #8A8FB9;
+    font-size: 14px;
+}
+
+.fpm-mailbox>input {
+    width: 60%;
+    padding: 3%;
+    color: #8A8FB9;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+}
+
+.fpm-mailbox>button {
+    width: 30%;
+    padding: 3% 0;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    background-color: #FB2E86;
+}
+
+.categories {
+    width: 25%;
+}
+
+.allPages {
+    width: 23%;
+}
+
+.categories{
+    margin-right: 2%;
+}
+
+.customerCare {
+    width: 20%;
+    margin-right: 2%;
+}
+
+.fp-page>p{
+    color: #000;
+    text-align: left;
+    font-size: 16px;
+    font-family: 'Josefin Sans';
+    font-weight: 600;
+}
+
+.fp-page>ul {
+    text-align: left;
+    padding: 0;
+}
+
+.fp-page>ul>ol {
+    color: #8A8FB9;
+    padding: 0;
+    font-size: 14px;
+    line-height: 32px;
+    font-family: 'Jost';
+}
+
+.f-copy {
+    display: flex;
+}
