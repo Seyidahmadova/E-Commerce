@@ -2,7 +2,6 @@
     width: 100%;
     bottom: 0;
     right: 0;
-    position: absolute;
     background-color: #EEEFFB;
 }
 
@@ -142,7 +141,7 @@
 }
 
 .fp-page>p{
-    color: #000;
+    color: var(--darkBlue-color);
     text-align: left;
     font-size: 16px;
     font-family: 'Josefin Sans';
@@ -179,6 +178,6 @@
 
 .fc-medias>ul {
     display: flex;
-    color: #0F124B;
+    color: var(--darkBlue-color);
 }
 

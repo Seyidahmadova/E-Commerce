@@ -7,11 +7,11 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-          <HeadingBar/>
+        {/* <HeadingBar /> */}
         <Routes>
           <Route path="/" element={<HomePage />} />
         </Routes>
-          <Footer/>
+        <Footer />
       </BrowserRouter>
     </div>
   );

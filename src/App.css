@@ -1,11 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500;600&display=swap');
 
+/* width
+max-770px
+max-610px */
+
 html, body {
   width: 100%;
-  margin: 0px;
-  padding: 0px;
-  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --darkBlue-color: #000080;
+  --pink-color: #FB2E86;
+  --gray-color: #B7BACB;
+  --light-violet: #EEEFFB;
+  --dark-violet: #E7E4F8;
 }
 
 a {
