@@ -1,5 +1,4 @@
 .footer {
-    /* background-color: #E7E4F8; */
     width: 100%;
     bottom: 0;
     right: 0;
@@ -8,22 +7,37 @@
 }
 
 .f-pages {
-    width: 70%;
+    width: 72%;
     display: flex;
     margin: 0 auto;
     padding: 5% 0;
     justify-content: space-between;
 }
 
-.fp-mail {
-    text-align: left;
-    width: 42%;
-    margin-right: 5%;
+.fp-categories {
+    width: 56%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.fp-mail>p {
-    color: #8A8FB9;
-    font-size: 14px;
+.fp-page {
+    flex: 1 1 150px;
+}
+
+.fpm-box  {
+    display: flex;
+    flex-direction: column;
+}
+
+.fp-mail {
+    text-align: left;
+    width: 40%;
+    margin-right: 4%;
+}
+
+.fpm-mailbox {
+    display: flex;
+    width: 100%;
 }
 
 .fpm-mailbox>input {
@@ -32,7 +46,7 @@
     color: #8A8FB9;
     outline: none;
     border: none;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 .fpm-mailbox>button {
@@ -40,25 +54,91 @@
     padding: 3% 0;
     outline: none;
     border: none;
-    border-radius: 20px;
+    border-radius: 10px;
     background-color: #FB2E86;
 }
 
+.fpm-box>p {
+    color: #8A8FB9;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 860px) {
+    
+    .fpm-mailbox {
+        flex-direction: column;
+    }
+    .fpm-mailbox>input {
+        width: 90%;
+        margin-bottom: 5%;
+    }
+    .fpm-mailbox>button {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .f-pages {
+        width: 80%;
+        flex-direction: column;
+    }
+    .fp-mail {
+        width: 100%;
+        margin-bottom: 5%;
+    }
+    .fpm-box {
+        flex-direction: row;
+        width: 100%;
+    }
+    .fpm-box >p {
+        width: 40%;
+        margin: 0;
+    }
+    .fpm-mailbox {
+        width: 45%;
+        margin-right: 10%;
+    }
+    .fpm-mailbox>input {
+        padding: 5%;
+        width: 100%;
+    }
+    .fpm-mailbox>button {
+        width: 50%;
+        padding: 4% 0;
+    }
+    .fp-categories {
+        width: 100%!important;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .fp-categories {
+        width: 100%;
+    }
+    .fp-page {
+        flex: 1 1 150px;
+    }
+    .categories {
+        margin-right: 8%!important;
+    }
+    .customerCare {
+        margin: 0!important;
+    }
+}
+
+
 .categories {
-    width: 25%;
+    width: 35%;
+    margin-right: 4%;
 }
 
 .allPages {
-    width: 23%;
-}
-
-.categories{
-    margin-right: 2%;
+    width: 30%;
 }
 
 .customerCare {
-    width: 20%;
-    margin-right: 2%;
+    width: 30%;
+    margin-right: 3%;
 }
 
 .fp-page>p{
