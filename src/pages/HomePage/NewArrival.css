@@ -1,0 +1,33 @@
+.NewArrival {
+    width: 90%;
+    padding: 0 0 8% 0;
+    border: 1px solid var(--grayBlue);
+    display: flex;
+    flex-direction: column;
+    background-color: var(--grayBlue);
+}
+
+.na-img {
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 5%;
+} 
+
+.na-img>img {
+    width: 100%;
+}
+
+.na-detail {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+}
+.na-detail>.title,
+.na-detail>.price {
+    width: 100%;
+    font-family: "Jost";
+    font-size: 16px;
+    margin: 3% auto 0 auto;
+    color: var(--darkBlue-color);
+}

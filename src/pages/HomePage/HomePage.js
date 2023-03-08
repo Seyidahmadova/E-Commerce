@@ -13,17 +13,105 @@ import offer1 from "../../images/home/offer1.jpg";
 import offer2 from "../../images/home/offer2.jpg";
 import offer3 from "../../images/home/offer3.jpg";
 import offer4 from "../../images/home/offer4.jpg";
-import { FaPenNib, FaCalendarAlt } from "react-icons/fa";
+import newTrend from "../../images/home/newTrend.png";
+import bestSeller from "../../images/home/bestSeller.jpg";
+import newArrival from "../../images/home/newArrival.jpg";
+import offeredProduct from "../../images/home/offeredProduct.png";
+import { FaPenNib, FaCalendarAlt, FaCircle } from "react-icons/fa";
+import OwlCarousel from "react-owl-carousel";
+import "owl.carousel/dist/assets/owl.carousel.css";
+import "owl.carousel/dist/assets/owl.theme.default.css";
+import NewTrendSlide from "./NewTrendSlide";
+import BestSeller from "./BestSeller";
+import NewArrival from "./NewArrival";
 
 export default function HomePage() {
+  const fTitle = "Best Furniture For Your Castle...";
+  const title = "New Furniture Collection Trends in 2023";
+  const cont =
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in estadipiscing in phasellus non in justo.";
+
   return (
     <div className="home">
+      <div className="hSlider">
+        <OwlCarousel items={1} loop autoplay="3000">
+          <NewTrendSlide
+            img={newTrend}
+            fTitle={fTitle}
+            title={title}
+            content={cont}
+          />
+          <NewTrendSlide
+            img={newTrend}
+            fTitle={fTitle}
+            title={title}
+            content={cont}
+          />
+          <NewTrendSlide
+            img={newTrend}
+            fTitle={fTitle}
+            title={title}
+            content={cont}
+          />
+          <NewTrendSlide
+            img={newTrend}
+            fTitle={fTitle}
+            title={title}
+            content={cont}
+          />
+        </OwlCarousel>
+      </div>
+      <div className="allBestSeller">
+        <h1>Best Sellers</h1>
+        <OwlCarousel items={3} loop autoplay="3000">
+          <BestSeller
+            img={bestSeller}
+            title="Comfort Handy Craft"
+            price="$45.99"
+          />
+          <BestSeller
+            img={bestSeller}
+            title="Comfort Handy Craft"
+            price="$45.99"
+          />
+          <BestSeller
+            img={bestSeller}
+            title="Comfort Handy Craft"
+            price="$45.99"
+          />
+          <BestSeller
+            img={bestSeller}
+            title="Comfort Handy Craft"
+            price="$45.99"
+          />
+          <BestSeller
+            img={bestSeller}
+            title="Comfort Handy Craft"
+            price="$45.99"
+          />
+          <BestSeller
+            img={bestSeller}
+            title="Comfort Handy Craft"
+            price="$45.99"
+          />
+          <BestSeller
+            img={bestSeller}
+            title="Comfort Handy Craft"
+            price="$45.99"
+          />
+          <BestSeller
+            img={bestSeller}
+            title="Comfort Handy Craft"
+            price="$45.99"
+          />
+        </OwlCarousel>
+      </div>
       <div className="homeWhatOffer">
         <h1>What Hekto Offer!</h1>
         <div className="homeOffers">
           <div className="ho-offer">
             <div className="ho-offer-img">
-            <img alt="offer" src={offer1}></img>
+              <img alt="offer" src={offer1}></img>
             </div>
             <p className="ho-offer-title">24/7 Support</p>
             <p className="ho-offer-text">
@@ -33,7 +121,7 @@ export default function HomePage() {
           </div>
           <div className="ho-offer">
             <div className="ho-offer-img">
-            <img alt="offer" src={offer2}></img>
+              <img alt="offer" src={offer2}></img>
             </div>
             <p className="ho-offer-title">24/7 Support</p>
             <p className="ho-offer-text">
@@ -43,7 +131,7 @@ export default function HomePage() {
           </div>
           <div className="ho-offer">
             <div className="ho-offer-img">
-            <img alt="offer" src={offer3}></img>
+              <img alt="offer" src={offer3}></img>
             </div>
             <p className="ho-offer-title">24/7 Support</p>
             <p className="ho-offer-text">
@@ -53,7 +141,7 @@ export default function HomePage() {
           </div>
           <div className="ho-offer">
             <div className="ho-offer-img">
-            <img alt="offer" src={offer4}></img>
+              <img alt="offer" src={offer4}></img>
             </div>
             <p className="ho-offer-title">24/7 Support</p>
             <p className="ho-offer-text">
@@ -62,6 +150,102 @@ export default function HomePage() {
             </p>
           </div>
         </div>
+      </div>
+      <div className="homeOfferedProduct">
+        <div className="o-product">
+          <span>
+            <img src={offeredProduct} alt="offered product"></img>
+          </span>
+          <div className="op-detail">
+            <h1>Unique Features Of leatest & Trending Poducts</h1>
+            <p>
+              <FaCircle className="circle-icon" /> All frames constructed with
+              hardwood solids and laminates
+            </p>
+            <p>
+              <FaCircle className="circle-icon" /> Reinforced with double wood
+              dowels, glue, screw - nails corner blocks and machine nails
+            </p>
+            <p>
+              <FaCircle className="circle-icon" /> Arms, backs and seats are
+              structurally reinforced
+            </p>
+            <div className="op-addToCard">
+              <Link>
+                <button>Add To Card</button>
+              </Link>
+              <div className="op-price">
+                <p>B&B Italian Sofa </p>
+                <p>$32.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="homeNewArrivals">
+        <h1>New Arrivals</h1>
+        <OwlCarousel items={4} loop autoplay="3000">
+          <NewArrival
+            img={newArrival}
+            title="Comfort Handy Craft"
+            price="$30.99"
+          />
+          <NewArrival
+            img={newArrival}
+            title="Comfort Handy Craft"
+            price="$30.99"
+          />
+          <NewArrival
+            img={newArrival}
+            title="Comfort Handy Craft"
+            price="$30.99"
+          />
+          <NewArrival
+            img={newArrival}
+            title="Comfort Handy Craft"
+            price="$30.99"
+          />
+          <NewArrival
+            img={newArrival}
+            title="Comfort Handy Craft"
+            price="$30.99"
+          />
+          <NewArrival
+            img={newArrival}
+            title="Comfort Handy Craft"
+            price="$30.99"
+          />
+          <NewArrival
+            img={newArrival}
+            title="Comfort Handy Craft"
+            price="$30.99"
+          />
+          <NewArrival
+            img={newArrival}
+            title="Comfort Handy Craft"
+            price="$30.99"
+          />
+          <NewArrival
+            img={newArrival}
+            title="Comfort Handy Craft"
+            price="$30.99"
+          />
+          <NewArrival
+            img={newArrival}
+            title="Comfort Handy Craft"
+            price="$30.99"
+          />
+          <NewArrival
+            img={newArrival}
+            title="Comfort Handy Craft"
+            price="$30.99"
+          />
+          <NewArrival
+            img={newArrival}
+            title="Comfort Handy Craft"
+            price="$30.99"
+          />
+        </OwlCarousel>
       </div>
       <div className="homeNewsletter">
         <p>Get Leatest Update By Subscribe 0ur Newslater</p>
