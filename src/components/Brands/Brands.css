@@ -1,0 +1,25 @@
+.Brands {
+  width: 70%;
+  padding: 0 15%;
+  margin: 5% auto;
+  display: flex;
+}
+
+.Brands > ul {
+  width: 100%;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Brands > ul > ol {
+  padding: 0;
+}
+
+.Brands > ul > ol > a {
+  width: 100%;
+}
+
+.Brands > ul > ol > a > img {
+  width: 100%;
+}

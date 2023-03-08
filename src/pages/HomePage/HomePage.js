@@ -4,11 +4,7 @@ import { Link } from "react-router-dom";
 import latestBlog1 from "../../images/home/latestBlog1.jpg";
 import latestBlog2 from "../../images/home/latestBlog2.jpg";
 import latestBlog3 from "../../images/home/latestBlog3.jpg";
-import brand1 from "../../images/home/brand1.png";
-import brand2 from "../../images/home/brand2.png";
-import brand3 from "../../images/home/brand3.png";
-import brand4 from "../../images/home/brand4.png";
-import brand5 from "../../images/home/brand5.png";
+import Brands from "../../components/Brands/Brands";
 import offer1 from "../../images/home/offer1.jpg";
 import offer2 from "../../images/home/offer2.jpg";
 import offer3 from "../../images/home/offer3.jpg";
@@ -253,35 +249,7 @@ export default function HomePage() {
           <button>Shop Now</button>
         </Link>
       </div>
-      <div className="homeBrands">
-        <ul>
-          <ol>
-            <a href="https://github.com/Cafarli">
-              <img alt="brand" src={brand1}></img>
-            </a>
-          </ol>
-          <ol>
-            <a href="https://github.com/seyidahmadova">
-              <img alt="brand" src={brand2}></img>
-            </a>
-          </ol>
-          <ol>
-            <a href="https://github.com/Cafarli">
-              <img alt="brand" src={brand3}></img>
-            </a>
-          </ol>
-          <ol>
-            <a href="https://github.com/seyidahmadova">
-              <img alt="brand" src={brand4}></img>
-            </a>
-          </ol>
-          <ol>
-            <a href="https://github.com/Cafarli">
-              <img alt="brand" src={brand5}></img>
-            </a>
-          </ol>
-        </ul>
-      </div>
+      <Brands />
       <div className="homeLatestBlog">
         <h1>Latest Blog</h1>
         <div className="hlb-allblogs">

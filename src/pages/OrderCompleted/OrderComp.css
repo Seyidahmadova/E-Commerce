@@ -1,0 +1,44 @@
+.OrderComp {
+    width: 100%;
+}
+
+.isCompleted {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    /* padding: 5%; */
+    margin: 10% auto;
+    /* border: 1px dashed var(--gray-color); */
+}
+
+.isCompleted>img {
+    width: 10%;
+    border: 8px solid var(--grayBlue);
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+}
+
+.isCompleted>h1 {
+    color: var(--darkBlue-color);
+}
+
+.isCompleted>p {
+    width: 85%;
+    color: gray;
+}
+
+.isCompleted>a {
+    width: 25%;
+}
+
+.isCompleted>a>button {
+    width: 100%;
+    padding: 8% 0;
+    margin: 10% 0;
+    outline: none;
+    border: none;
+    color: white;
+    background-color: var(--pink-color);
+    cursor: pointer;
+}
