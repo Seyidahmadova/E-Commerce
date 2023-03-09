@@ -3,6 +3,7 @@
     bottom: 0;
     right: 0;
     background-color: #EEEFFB;
+    /* position: fixed; */
 }
 
 .f-pages {
@@ -55,6 +56,7 @@
     border: none;
     border-radius: 10px;
     background-color: #FB2E86;
+    cursor: pointer;
 }
 
 .fpm-box>p {
@@ -178,6 +180,8 @@
 
 .fc-medias>ul {
     display: flex;
-    color: var(--darkBlue-color);
 }
 
+.fc-medias>ul>ol>a {
+    color: var(--darkBlue-color);
+}

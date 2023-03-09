@@ -87,13 +87,13 @@ export default function Footer() {
         <div className="fc-medias">
           <ul>
             <ol>
-              <BsFacebook />
+              <a href="https://facebook.com"><BsFacebook /></a>
             </ol>
             <ol>
-              <BsInstagram />
+            <a href="https://facebook.com"><BsInstagram /></a>
             </ol>
             <ol>
-              <BsTwitter />
+            <a href="https://facebook.com"><BsTwitter /></a>
             </ol>
           </ul>
         </div>

@@ -1,0 +1,186 @@
+.contact {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* CONTACT INFO */
+.contact-info {
+  width: 70%;
+  margin: 7% auto 3% auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ci-aboutUs {
+  width: 48%;
+  text-align: left;
+}
+
+.ci-aboutUs > h1 {
+  color: var(--darkBlue-color);
+}
+
+.ci-aboutUs > p {
+  color: var(--grayViolet);
+  font-family: "Jost";
+  font-size: 14px;
+}
+
+.circles {
+  display: flex;
+  width: 30%;
+  min-height: 20vh;
+  margin-top: 10%;
+}
+
+.circle {
+  width: 22%;
+  max-height: 5vh;
+  border-radius: 50%;
+  margin-right: 5%;
+}
+
+.cFirst {
+  background-color: blue;
+}
+
+.cSecond {
+  background-color: red;
+}
+
+.cThird {
+  background-color: #059c2e;
+}
+
+/* CONTACT WAY */
+.ci-contWay {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.ci-contWay > h1 {
+  color: var(--darkBlue-color);
+}
+
+.way {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Jost";
+}
+
+.way > div {
+  display: flex;
+  text-align: left;
+  align-items: center;
+  width: 46%;
+  height: 10vh;
+}
+
+.way > div > span {
+  width: 15%;
+  height: 5vh;
+  border-radius: 50%;
+  margin-right: 5%;
+}
+
+.way p {
+  width: 80%;
+  color: var(--grayViolet);
+  margin: 0;
+  font-size: 14px;
+  font-family: "Jost";
+}
+
+.way p a {
+  color: var(--grayViolet);
+}
+
+/* GET TOUCH */
+.contact-getTouch {
+  width: 70%;
+  margin: 0% auto 10% auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cgt-content {
+  width: 45%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.cgt-content > p {
+  color: var(--grayViolet);
+  font-size: 14px;
+  margin: 0 0 6% 0;
+}
+.cgt-mailBox {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.cgt-mailBox input {
+  width: 97%;
+  outline: none;
+  border: 1px solid var(--gray-color);
+  line-height: 35px;
+  padding-left: 3%;
+  font-family: "Jost";
+  border-radius: 5px;
+  font-size: 14px;
+  color: var(--gray-color);
+}
+
+.cgt-mailBox > div {
+  margin: 3% 0;
+}
+
+.mbNameEmail {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mbNameEmail > input {
+  width: 43%;
+}
+
+.cgt-mailBox textarea {
+  width: 95%;
+  font-family: "Jost";
+  height: 20vh;
+  resize: none;
+  font-size: 14px;
+  padding: 3%;
+  outline: none;
+  color: var(--gray-color);
+  border: 1px solid var(--gray-color);
+  border-radius: 5px;
+}
+
+.cgt-mailBox > button {
+  width: 35%;
+  padding: 3% 0;
+  background-color: var(--pink-color);
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+
+.cgt-image {
+  width: 52%;
+  object-fit: cover;
+}
+
+.cgt-image > img {
+  width: 100%;
+}
