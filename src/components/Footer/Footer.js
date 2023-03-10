@@ -6,7 +6,7 @@ export default function Footer() {
     <div className="footer">
       <div className="f-pages">
         <div className="fp-mail">
-          <h1>Hekto</h1>
+          <Link to="/"><h1>Hekto</h1></Link>
           <div className="fpm-box">
             <div className="fpm-mailbox">
               <input placeholder="Enter Email Address" />
@@ -57,6 +57,9 @@ export default function Footer() {
               </ol>
               <ol>
                 <Link>Order Tracking</Link>
+              </ol>
+              <ol>
+                <Link to="/faq">Faq</Link>
               </ol>
             </ul>
           </div>

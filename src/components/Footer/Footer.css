@@ -2,7 +2,7 @@
     width: 100%;
     bottom: 0;
     right: 0;
-    background-color: #EEEFFB;
+    background-color: var(--light-violet);
     /* position: fixed; */
 }
 
@@ -35,6 +35,10 @@
     margin-right: 4%;
 }
 
+.fp-mail>a>h1 {
+    color: var(--darkBlue-color);
+    font-family: 'Josefin Sans';
+}
 .fpm-mailbox {
     display: flex;
     width: 100%;

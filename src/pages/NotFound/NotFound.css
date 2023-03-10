@@ -1,0 +1,40 @@
+.notFound {
+    width: 100%;
+}
+
+.nf-content {
+    width: 50%;
+    margin: 5% auto;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nf-content>img {
+    width: 100%;
+}
+
+.nf-content>p {
+    color: var(--darkBlue-color);
+    font-size: 18px;
+    font-family: "Jost";
+    font-weight: 500;
+}
+
+.nf-content>a {
+    width: 25%;
+}
+
+.nf-content>a>button {
+    width: 100%;
+    padding: 10% 0;
+    background-color: var(--pink-color);
+    color: white;
+    font-family: 'Jost';
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
