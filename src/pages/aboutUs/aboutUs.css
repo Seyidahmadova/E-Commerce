@@ -1,0 +1,67 @@
+.aboutUs {
+  width: 100%;
+}
+
+.au-content {
+  width: 70%;
+  margin: 8% auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.auc-img {
+  width: 45%;
+  object-fit: cover;
+}
+
+.auc-img > img {
+  width: 100%;
+}
+
+.auc-subcontent {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.auc-subcontent > h1 {
+  color: var(--darkBlue-color);
+}
+
+.auc-subcontent > p {
+  margin: 0;
+  color: var(--grayViolet);
+  font-size: 14px;
+}
+
+.auc-subcontent > a {
+  width: 30%;
+  /* margin-top: 10%; */
+}
+
+.auc-subcontent > a > button {
+  width: 100%;
+  margin-top: 20%;
+  padding: 10% 0;
+  background-color: var(--pink-color);
+  color: white;
+  font-family: "Jost";
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+/* OUR FEATURES */
+.ourFeatures {
+  width: 70%;
+  margin: 0% auto 5% auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.ourFeatures > h1 {
+  color: var(--darkBlue-color);
+  margin-bottom: 10%;
+}

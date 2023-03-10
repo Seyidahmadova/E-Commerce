@@ -5,6 +5,7 @@ import OrderComp from "./pages/OrderCompleted/OrderComp";
 import Contact from "./pages/Contact/Contact";
 import NotFound from "./pages/NotFound/NotFound";
 import Faq from "./pages/Faq/Faq";
+import AboutUs from "./pages/aboutUs/aboutUs";
 import HeadingBar from "./components/HeadingBar/HeadingBar";
 import Footer from "./components/Footer/Footer";
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/not-found" element={<NotFound/>}/>
           <Route path="/faq" element={<Faq/>}/>
+          <Route path="/about" element={<AboutUs/>}/>
         </Routes>
         <Footer />
       </BrowserRouter>

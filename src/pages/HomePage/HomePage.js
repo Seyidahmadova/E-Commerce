@@ -5,10 +5,6 @@ import latestBlog1 from "../../images/home/latestBlog1.jpg";
 import latestBlog2 from "../../images/home/latestBlog2.jpg";
 import latestBlog3 from "../../images/home/latestBlog3.jpg";
 import Brands from "../../components/Brands/Brands";
-import offer1 from "../../images/home/offer1.jpg";
-import offer2 from "../../images/home/offer2.jpg";
-import offer3 from "../../images/home/offer3.jpg";
-import offer4 from "../../images/home/offer4.jpg";
 import newTrend from "../../images/home/newTrend.png";
 import bestSeller from "../../images/home/bestSeller.jpg";
 import newArrival from "../../images/home/newArrival.jpg";
@@ -17,6 +13,7 @@ import { FaPenNib, FaCalendarAlt, FaCircle } from "react-icons/fa";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
+import OurService from "../../components/OurServices/ourService";
 import NewTrendSlide from "./NewTrendSlide";
 import BestSeller from "./BestSeller";
 import NewArrival from "./NewArrival";
@@ -104,48 +101,7 @@ export default function HomePage() {
       </div>
       <div className="homeWhatOffer">
         <h1>What Hekto Offer!</h1>
-        <div className="homeOffers">
-          <div className="ho-offer">
-            <div className="ho-offer-img">
-              <img alt="offer" src={offer1}></img>
-            </div>
-            <p className="ho-offer-title">24/7 Support</p>
-            <p className="ho-offer-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa
-              purus gravida.
-            </p>
-          </div>
-          <div className="ho-offer">
-            <div className="ho-offer-img">
-              <img alt="offer" src={offer2}></img>
-            </div>
-            <p className="ho-offer-title">24/7 Support</p>
-            <p className="ho-offer-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa
-              purus gravida.
-            </p>
-          </div>
-          <div className="ho-offer">
-            <div className="ho-offer-img">
-              <img alt="offer" src={offer3}></img>
-            </div>
-            <p className="ho-offer-title">24/7 Support</p>
-            <p className="ho-offer-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa
-              purus gravida.
-            </p>
-          </div>
-          <div className="ho-offer">
-            <div className="ho-offer-img">
-              <img alt="offer" src={offer4}></img>
-            </div>
-            <p className="ho-offer-title">24/7 Support</p>
-            <p className="ho-offer-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa
-              purus gravida.
-            </p>
-          </div>
-        </div>
+        <OurService/>
       </div>
       <div className="homeOfferedProduct">
         <div className="o-product">
