@@ -3,7 +3,6 @@
     bottom: 0;
     right: 0;
     background-color: var(--light-violet);
-    /* position: fixed; */
 }
 
 .f-pages {
@@ -128,6 +127,9 @@
     }
     .customerCare {
         margin: 0!important;
+    }
+    .fpm-box >p {
+        font-size: 12px;
     }
 }
 

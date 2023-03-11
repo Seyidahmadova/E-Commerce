@@ -12,6 +12,7 @@
 .PagePath>h1 {
     color: var(--darkBlue-color);
     font-size: 32px;
+    margin: 0;
 }
 
 .PagePath>p>a {

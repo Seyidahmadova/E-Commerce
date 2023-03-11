@@ -1,0 +1,96 @@
+.login {
+    width: 100%;
+}
+
+.login-part {
+    width: 30%;
+    margin: 7% auto 10% auto;
+    padding: 3% 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 5px 15px var(--light-violet);
+}
+
+.login-part>h1 {
+    font-family: 'Josefin Sans';
+    color: var(--darkBlue-color);
+}
+
+.login-form {
+    width: 100%;
+    margin: 3% auto;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.login-form>input {
+    width: 97%;
+    margin: 3% 0;
+    padding: 3% 0 3% 3%;
+    border: 1px solid var(--gray-color);
+    outline: none;
+}
+
+.lForgotPass {
+    width: 100%;
+    margin: 2% 0;
+    color: var(--gray-color);
+    font-family: 'Jost';
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.login-form>a {
+    width: 100%;
+}
+
+.login-form>a>button {
+    width: 100%;
+    margin-top: 3%;
+    text-align: center;
+    padding: 3% 0;
+    color: white;
+    background-color: var(--pink-color);
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.login-part>a {
+    width: 100%;
+}
+
+.toSignUp {
+    width: 100%;
+    font-family: 'Jost';
+    font-size: 14px;
+    color: var(--gray-color);
+    cursor: pointer;
+}
+
+@media screen and (max-width:660px) {
+    .login-part {
+        width: 40%;
+    }
+    .login-form>input {
+        font-size: 12px;
+    }
+    .lForgotPass,.toSignUp {
+        font-size: 11px;
+    }
+    .login-form>a>button {
+        font-size: 11px;
+        padding: 4% 0;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .login-part {
+        width: 45%;
+    }
+}
