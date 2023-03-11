@@ -10,12 +10,12 @@ export default function Login() {
             <div className="login-part">
                 <h1>Login</h1>
                 <form className="login-form">
-                    <input type="text" placeholder="Email Address" required />
-                    <input type="text" placeholder="Password" required />
+                    <input type="mail" placeholder="Email Address" required />
+                    <input type="password" placeholder="Password" required />
                     <p className="lForgotPass">Forgot your password?</p>
                     <Link to='/'><button>Sign In</button></Link>
                 </form>
-                <Link to="/singUp"><p className="toSignUp">Don't have a account?Sign Up</p></Link>
+                <Link to="/singUp"><p className="toSignUp">Don't have a account? Sign Up</p></Link>
             </div>
             <Brands/>
         </div>
