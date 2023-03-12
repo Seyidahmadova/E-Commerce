@@ -1,20 +1,14 @@
-import "./BlogPage.css";
+import "./SingleBlog.css";
 import PagePath from "../../components/PagePath/PagePath";
 import Brands from "../../components/Brands/Brands";
-import BlogView from "./BlogView";
 import BlogSide from "../../components/BlogSide/BlogSide";
 
-export default function BlogPage() {
+export default function SingleBlog() {
 
   return (
-    <div className="BlogPage">
-      <PagePath title="Blogs" curPage="Blogs" path="/blogs" />
+    <div className="SingleBlog">
+      <PagePath title="Single Blog" curPage="Single Blog" path="/single-blog" />
       <div className="allBlog-page">
-        <div className="blog-area">
-          <BlogView />
-          <BlogView />
-          <BlogView />
-        </div>
         <div className="blog-additional">
             <BlogSide/>
         </div>
