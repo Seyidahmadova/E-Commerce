@@ -12,6 +12,7 @@ html, body {
   --darkBlue-color: #000080;
   --pink-color: #FB2E86;
   --pinkViolet: #F5E1FC;
+  --light-pink: #FFE7F9;
   --gray-color: #B7BACB;
   --grayBlue: #F5F6F8;
   --light-blue: #bde0ff;
@@ -19,6 +20,8 @@ html, body {
   --light-violet: #EEEFFB;
   --most-light-violet: #F6F5FF;
   --grayViolet: #8A8FB9;
+  --yellow-color:#FFA454;
+  --light-yellow: #FFECE2;
 }
 
 a {

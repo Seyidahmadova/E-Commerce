@@ -1,0 +1,102 @@
+.BlogView {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.blog-img>img {
+    width: 100%;
+}
+
+.blogInfo {
+    width: 100%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-autDate {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    justify-content: space-between;
+}
+
+.blog-autDate>p {
+    width: 45%;
+    display: flex;
+    align-items: center;
+}
+
+.b-author {
+    width: 80%;
+    background-color: var(--light-pink);
+    color: var(--darkBlue-color);
+    text-align: center;
+    padding: 1% 10%;
+}
+
+span.b-date {
+    width: 80%;
+    background-color: var(--light-yellow);
+    color: var(--darkBlue-color);
+    padding: 1% 10%;
+}
+
+.icon {
+    background-color: white;
+    margin-right: 4%;
+    width: 15%;
+}
+
+.pen {
+    color: var(--pink-color);
+}
+
+.calendar {
+    color: var(--yellow-color);
+    width: 15%;
+}
+
+.blog-content {
+    width: 100%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.blog-content>h1 {
+    width: 100%;
+    color: var(--darkBlue-color);
+    font-family: "Josefin Sans";
+    font-size: 25px;
+}
+
+.blog-content>p {
+    width: 100%;
+    color: var(--grayViolet);
+    font-family: 'Jost';
+    font-size: 14px;
+    margin: 2% 0 3% 0;
+}
+
+.blog-content>a {
+    width: 15%;
+}
+
+.blog-content>a>button {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: var(--dark);
+    text-align: left;
+    cursor: pointer;
+}

@@ -8,6 +8,7 @@ import Faq from "./pages/Faq/Faq";
 import AboutUs from "./pages/aboutUs/aboutUs";
 import Login from "./pages/Login/Login";
 import SignUp from "./pages/SignUp/SignUp";
+import BlogPage from "./pages/BlogPage/BlogPage";
 import HeadingBar from "./components/HeadingBar/HeadingBar";
 import Footer from "./components/Footer/Footer";
 function App() {
@@ -22,7 +23,8 @@ function App() {
           <Route path="/not-found" element={<NotFound/>}/>
           <Route path="/faq" element={<Faq/>}/>
           <Route path="/login" element={<Login/>}/>
-          <Route path="/singup" element={<SignUp/>}/>
+          <Route path="/signup" element={<SignUp/>}/>
+          <Route path="/blogs" element={<BlogPage/>}/>
           <Route path="/about" element={<AboutUs/>}/>
         </Routes>
         <Footer />

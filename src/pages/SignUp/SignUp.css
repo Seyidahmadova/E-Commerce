@@ -58,9 +58,13 @@
     width: 100%;
 }
 
+.acceptTerm>a>label>span {
+    color: var(--darkBlue-color);
+}
+
 .acceptTerm>a>label,
 .acceptTerm>input {
-    color: var(--darkBlue-color);
+    color: gray;
     font-size: 14px;
 }
 
@@ -89,7 +93,7 @@
     width: 100%;
     font-family: 'Jost';
     font-size: 14px;
-    color: var(--gray-color);
+    color: gray;
     cursor: pointer;
 }
 

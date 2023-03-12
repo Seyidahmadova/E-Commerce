@@ -1,12 +1,15 @@
 import "./Footer.css";
 import { Link } from "react-router-dom";
 import { BsFacebook, BsInstagram, BsTwitter } from "react-icons/bs";
+
 export default function Footer() {
   return (
     <div className="footer">
       <div className="f-pages">
         <div className="fp-mail">
-          <Link to="/"><h1>Hekto</h1></Link>
+          <Link to="/">
+            <h1>Hekto</h1>
+          </Link>
           <div className="fpm-box">
             <div className="fpm-mailbox">
               <input placeholder="Enter Email Address" />
@@ -90,13 +93,19 @@ export default function Footer() {
         <div className="fc-medias">
           <ul>
             <ol>
-              <a href="https://facebook.com"><BsFacebook /></a>
+              <a href="https://facebook.com">
+                <BsFacebook />
+              </a>
             </ol>
             <ol>
-            <a href="https://facebook.com"><BsInstagram /></a>
+              <a href="https://facebook.com">
+                <BsInstagram />
+              </a>
             </ol>
             <ol>
-            <a href="https://facebook.com"><BsTwitter /></a>
+              <a href="https://facebook.com">
+                <BsTwitter />
+              </a>
             </ol>
           </ul>
         </div>
