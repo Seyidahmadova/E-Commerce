@@ -18,12 +18,6 @@
     width: 35%;
     display: flex;
     flex-direction: column;
-    text-align: left;
 }
 
-.blog-additional h1 {
-    color: var(--darkBlue-color);
-    font-size: 25px;
-    margin-bottom: 10%;
-}
 

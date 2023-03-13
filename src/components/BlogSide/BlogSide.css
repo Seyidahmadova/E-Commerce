@@ -1,3 +1,13 @@
+.BlogSide {
+    text-align: left;
+}
+
+.BlogSide h1 {
+    color: var(--darkBlue-color);
+    font-size: 25px;
+    margin-bottom: 10%;
+}
+
 /* SEARCH */
 .searchArea {
     width: 100%;

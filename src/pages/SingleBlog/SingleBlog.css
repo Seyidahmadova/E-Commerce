@@ -1,0 +1,154 @@
+.SingleBlog {
+    width: 100%;
+}
+
+.single-blog {
+    width: 80%;
+    margin: 5% auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sBlogComment {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sBlogPart {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sb-img {
+    width: 100%;
+    object-fit: cover;
+}
+.sb-img>img {
+    width: 100%;
+}
+
+/* AUTHOR DATE */
+.blog-autDate {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    justify-content: space-between;
+}
+
+.blog-autDate>p {
+    width: 45%;
+    display: flex;
+    align-items: center;
+}
+
+.b-author {
+    width: 80%;
+    background-color: var(--light-pink);
+    color: var(--darkBlue-color);
+    text-align: center;
+    padding: 1% 10%;
+}
+
+span.b-date {
+    width: 80%;
+    background-color: var(--light-yellow);
+    color: var(--darkBlue-color);
+    padding: 1% 10%;
+}
+
+.icon {
+    background-color: white;
+    margin-right: 4%;
+    width: 15%;
+}
+
+.pen {
+    color: var(--pink-color);
+}
+
+.calendar {
+    color: var(--yellow-color);
+    width: 15%;
+}
+
+/* CONTENT */
+.sb-content {
+    width: 100%;
+    text-align: left;
+}
+
+.sb-content>h1 {
+    color: var(--darkBlue-color);
+    font-size: 25px;
+}
+
+.sbc-firstPart,
+.sbc-secondPart {
+    color: var(--grayViolet);
+    font-size: 16px;
+    margin: 3% 0;
+}
+
+.sbc-videoImg {
+    width: 100%;
+    margin: 5% 0;
+    display: flex;
+    justify-content: space-between;
+    object-fit: cover;
+}
+
+.sbc-Img {
+    width: 48%;
+}
+
+.sbc-Video {
+    width: 48%!important;
+}
+
+
+/* COMMENTS */
+.sCommentPart {
+    margin-top: 10%;
+    width: 85%;
+}
+.scp-comments {
+    width: 90%;
+}
+.commentForm {
+    width: 100%;
+    margin-top: 15%;
+    text-align: left;
+}
+
+.commentForm>h1 {
+    font-size: 25px;
+    color: var(--darkBlue-color);
+}
+
+.commentForm>textarea {
+    width: 90%;
+    height: 20vh;
+    padding: 3%;
+    font-family: 'Jost';
+    resize: none;
+    outline: none;
+    border: 1px solid var(--grayViolet);
+    border-radius: 5px;
+    margin: 0;
+}
+.commentForm>button {
+    width: 100%;
+    background-color: var(--pink-color);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 3% 0;
+    margin-top: 5%;
+}
+/* SIDE BAR */
+.sideBar {
+    width: 35%;
+} 

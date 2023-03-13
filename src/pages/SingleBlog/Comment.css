@@ -1,0 +1,49 @@
+.Comment {
+    width: 96%;
+    margin-bottom: 5%;
+    padding: 2% 10% 2% 2%;
+    box-shadow: 0 2px 10px gray;
+    display: flex;
+    justify-content: space-between;
+}
+.commentImg {
+    width: 30%;
+    object-fit: cover;
+}
+
+.commentImg>img {
+    width: 100%;
+}
+
+.commentInfo {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+}
+
+.cTitle {
+    width: 100%;
+    display: flex;
+}
+
+.cUser {
+    width: 45%;
+    color: var(--darkBlue-color);
+    font-size: 16px;
+    font-family: 'Josefin Sans';
+}
+
+.cDate {
+    width: 45%;
+}
+
+.cDate,
+.cText>p {
+    color: var(--gray-color);
+    font-size: 14px;
+    font-family: 'Jost';
+}
+
+.cText>p {
+    text-align: left;
+}

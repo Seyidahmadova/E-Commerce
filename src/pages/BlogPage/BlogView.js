@@ -16,7 +16,7 @@ export default function BlogView() {
               Ali Ahmedov </span>
             </p>
             <p><IoMdCalendar className="icon calendar" /><span className="b-date">
-              3 March 2023</span>
+              12 March 2023</span>
             </p>
           </div>
           <div className="blog-content">
