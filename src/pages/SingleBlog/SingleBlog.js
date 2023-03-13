@@ -1,5 +1,4 @@
 import "./SingleBlog.css";
-import ReactPlayer from "react-player";
 import blogimg from "../../images/singleBlog/singleBlog.jpg";
 import blogimg2 from "../../images/singleBlog/singleBlog2.jpg";
 import { ImPen } from "react-icons/im";
