@@ -25,7 +25,7 @@ html, body {
   --light-yellow: #FFECE2;
 }
 
-a {
+.App a {
   text-decoration: none;
 }
 

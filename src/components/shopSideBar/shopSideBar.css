@@ -21,6 +21,11 @@
     margin: 3% 0;
 }
 
+.form-check label {
+    font-size: 15px;
+    font-family: 'Jost';
+}
+
 .productBrandsPart .form-check-input[type=checkbox]{
     background-color: #E5E0FC;
     border-color: #E5E0FC;

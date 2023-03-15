@@ -1,86 +1,85 @@
 .ShopListItem {
-    width: 100%;
-    margin-bottom: 5%;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  width: 100%;
+  margin-bottom: 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .sli-img {
-    width: 35%;
-    object-fit: cover;
+  width: 35%;
+  object-fit: cover;
 }
 
-.sli-img>img {
-    width: 100%;
+.sli-img > img {
+  width: 100%;
 }
 
 .sli-info {
-    width: 62%;
-    display: flex;
-    flex-direction: column;
-    text-align: left;
+  width: 62%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
 }
 
 .sli-title {
-    width: 70%;
-    display: flex;
-    justify-content: space-between;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
 }
 
-.sli-title>p {
-    width: 80%;
-    margin: 0;
+.sli-title > p {
+  width: 80%;
+  margin: 0;
 }
 
-.sli-title>p>a {
-    text-decoration: none;
-    width: 100%;
-    color: var(--darkBlue-color);
-    font-size: 18px;
-    font-family: 'Josefin Sans';
+.sli-title > p > a {
+  text-decoration: none;
+  width: 100%;
+  color: var(--darkBlue-color);
+  font-size: 18px;
+  font-family: "Josefin Sans";
 }
 
 .sli-circles {
-    width: 15%;
-    object-fit: cover;
-    margin: 0;
+  width: 15%;
+  object-fit: cover;
+  margin: 0;
 }
 
-.sli-circles>img {
-    width: 100%;
+.sli-circles > img {
+  width: 100%;
 }
 
 .sli-price {
-    width: 100%;
-    color: var(--darkBlue-color);
-    font-size: 15px;
-    font-family: 'Josefin Sans';
+  width: 100%;
+  color: var(--darkBlue-color);
+  font-size: 15px;
+  font-family: "Josefin Sans";
 }
 
-.sli-price>p {
-    margin: 1% 0;
-    /* font-size: */
+.sli-price > p {
+  margin: 1% 0;
+  /* font-size: */
 }
 
 .sli-about {
-    width: 100%;
-    color: var(--grayViolet);
+  width: 100%;
+  color: var(--grayViolet);
 }
 
-.sli-about>p{
-    font-size: 14px;
-    font-family: 'Jost';
+.sli-about > p {
+  font-size: 14px;
+  font-family: "Jost";
 }
 
 .sli-adding {
-    width: 30%;
-    display: flex;
-    justify-content: space-between;
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .addIcon {
-    color: var(--darkBlue-color);
-    cursor: pointer;
+  color: var(--darkBlue-color);
+  cursor: pointer;
 }
