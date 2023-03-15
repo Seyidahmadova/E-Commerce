@@ -1,0 +1,81 @@
+.ShopListItem {
+    width: 100%;
+    margin-bottom: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sli-img {
+    width: 30%;
+    object-fit: cover;
+}
+
+.sli-img>img {
+    width: 100%;
+}
+
+.sli-info {
+    width: 67%;
+    padding: 3% 0%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.sli-title {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sli-title>p {
+    width: 80%;
+    color: var(--darkBlue-color);
+    font-size: 18px;
+    font-family: 'Josefin Sans';
+    margin: 0;
+}
+
+.sli-circles {
+    width: 15%;
+    object-fit: cover;
+    margin: 0;
+}
+
+.sli-circles>img {
+    width: 100%;
+}
+
+.sli-price {
+    width: 100%;
+    color: var(--darkBlue-color);
+    font-size: 16px;
+    font-family: 'Josefin Sans';
+}
+
+.sli-price>p {
+    margin: 2% 0;
+}
+
+.sli-about {
+    width: 100%;
+    color: var(--grayViolet);
+    font-size: 16px;
+    font-family: 'Jost';
+}
+
+.sli-about>p {
+    margin: 0% 0 5% 0;
+}
+
+.sli-adding {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.addIcon {
+    color: var(--darkBlue-color);
+    cursor: pointer;
+}
