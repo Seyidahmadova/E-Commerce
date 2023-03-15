@@ -3,6 +3,7 @@ import item from "../../images/shopListItem/shopListItem.jpg";
 import circles from "../../images/shopListItem/circles.png";
 import { FiShoppingCart, FiHeart } from "react-icons/fi";
 import { FaSearchPlus } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export default function ShopListItem(props) {
   return (
@@ -12,7 +13,7 @@ export default function ShopListItem(props) {
       </div>
       <div className="sli-info">
         <div className="sli-title">
-          <p>{props.title}</p>
+          <p><Link>{props.title}</Link></p>
           <div className="sli-circles">
             <img alt="circle" src={circles}></img>
           </div>

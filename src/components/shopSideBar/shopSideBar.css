@@ -1,0 +1,72 @@
+.shopSideBar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.ssb-part {
+    text-align: left;
+    margin-bottom: 20%;
+}
+
+.ssb-title {
+    font-family: 'Josefin Sans';
+    font-size: 22px;
+    color: #151875;
+}
+
+.form-check {
+    text-align: left;
+    color: var(--grayViolet);
+    margin: 3% 0;
+}
+
+.productBrandsPart .form-check-input[type=checkbox]{
+    background-color: #E5E0FC;
+    border-color: #E5E0FC;
+}
+
+.productBrandsPart .form-check-input[type=checkbox]:checked{
+    background-color: #603EFF;
+    border-color: #603EFF;
+}
+
+.discountOfferPart .form-check-input[type=checkbox]{
+    background-color: #ffd3d3;
+    border-color: #ffd3d3;
+}
+
+.discountOfferPart .form-check-input[type=checkbox]:checked{
+    background-color: #fa3131;
+    border-color: #fa3131;
+}
+
+.categories .form-check-input[type=checkbox]{
+    background-color: #f4e8fe;
+    border-color: #f4e8fe;
+}
+
+.categories .form-check-input[type=checkbox]:checked{
+    background-color: #8A2BE2;
+    border-color: #8A2BE2;
+}
+
+.priceFilterPart .form-check-input[type=checkbox]{
+    background-color: #FFDBF1;
+    border-color: var(--pink-color);
+}
+
+.priceFilterPart .form-check-input[type=checkbox]:checked{
+    background-color: var(--pink-color);
+    border-color: var(--pink-color);
+}
+
+.ratingItem .form-check-input[type=checkbox]{
+    background-color: #FFF6DA;
+    border-color: #FFF6DA;
+}
+
+.ratingItem .form-check-input[type=checkbox]:checked{
+    background-color: #FFCC2E;
+    border-color: #FFCC2E;
+}

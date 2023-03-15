@@ -180,8 +180,7 @@
 /* LATEST BLOG */
 .homeLatestBlog {
     width: 70%;
-    padding: 0 15%;
-    margin: 6% 0 8% 0;
+    margin: 6% auto 8% auto;
 }
 
 .homeLatestBlog>h1 {

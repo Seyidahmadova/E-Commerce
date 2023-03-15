@@ -47,7 +47,7 @@ export default function Footer() {
             <p>Customer Care</p>
             <ul>
               <ol>
-                <Link>My Account</Link>
+                <Link to="/login">My Account</Link>
               </ol>
               <ol>
                 <Link>Discount</Link>
@@ -70,7 +70,7 @@ export default function Footer() {
             <p>Pages</p>
             <ul>
               <ol>
-                <Link>Blog</Link>
+                <Link to="/blogs">Blog</Link>
               </ol>
               <ol>
                 <Link>Browse the Shop</Link>

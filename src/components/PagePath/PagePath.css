@@ -1,7 +1,6 @@
 .PagePath {
-    width: 90%;   
+    width: 100%;   
     height: 35vh;
-    padding-left: 10%;
     background-color: var(--most-light-violet);
     display: flex;
     flex-direction: column;
@@ -10,14 +9,20 @@
 }
 
 .PagePath>h1 {
+    padding-left: 10%;
     color: var(--darkBlue-color);
     font-size: 32px;
     margin: 0;
 }
 
+.PagePath>p {
+    padding-left: 10%;
+}
+
 .PagePath>p>a {
     color: black;
     font-family: "Jost";
+    text-decoration: none;
 }
 
 .PagePath>p>a>span {

@@ -1,13 +1,14 @@
 .ShopListItem {
     width: 100%;
-    margin-bottom: 2%;
+    margin-bottom: 5%;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .sli-img {
-    width: 30%;
+    width: 35%;
     object-fit: cover;
 }
 
@@ -16,25 +17,29 @@
 }
 
 .sli-info {
-    width: 67%;
-    padding: 3% 0%;
+    width: 62%;
     display: flex;
     flex-direction: column;
     text-align: left;
 }
 
 .sli-title {
-    width: 60%;
+    width: 70%;
     display: flex;
     justify-content: space-between;
 }
 
 .sli-title>p {
     width: 80%;
+    margin: 0;
+}
+
+.sli-title>p>a {
+    text-decoration: none;
+    width: 100%;
     color: var(--darkBlue-color);
     font-size: 18px;
     font-family: 'Josefin Sans';
-    margin: 0;
 }
 
 .sli-circles {
@@ -50,23 +55,23 @@
 .sli-price {
     width: 100%;
     color: var(--darkBlue-color);
-    font-size: 16px;
+    font-size: 15px;
     font-family: 'Josefin Sans';
 }
 
 .sli-price>p {
-    margin: 2% 0;
+    margin: 1% 0;
+    /* font-size: */
 }
 
 .sli-about {
     width: 100%;
     color: var(--grayViolet);
-    font-size: 16px;
-    font-family: 'Jost';
 }
 
-.sli-about>p {
-    margin: 0% 0 5% 0;
+.sli-about>p{
+    font-size: 14px;
+    font-family: 'Jost';
 }
 
 .sli-adding {

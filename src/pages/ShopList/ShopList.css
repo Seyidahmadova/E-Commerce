@@ -1,10 +1,48 @@
 .ShopList {
     width: 100%;
 }
+/* FILTER */
+.list-about {
+    width: 70%;
+    margin: 5% auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.la-title {
+    text-align: left;
+}
+
+.la-title>h1 {
+    color: var(--darkBlue-color);
+    margin: 0;
+}
+.la-title>p {
+    color: var(--grayViolet);
+}
+.dropdown-button>button ,
+.dropdown-button>button:active {
+    background-color: transparent!important;
+    color: var(--darkBlue-color)!important;
+    border: 1px solid var(--darkBlue-color)!important;
+}
+/* all shop list */
+.allShopList {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin: 5% auto 10% auto;
+}
+
+/* SHOP SIDEBAR */
+.shopSideBarPart {
+    width: 25%;
+}
+
+/* LIST OF PRODUCTS */
 .listProducts {
     width: 70%;
-    margin: 10% auto;
     display: flex;
     flex-direction: column;
 }
