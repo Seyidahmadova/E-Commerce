@@ -21,54 +21,40 @@ export default function ShopList() {
         </div>
         <div className="list-filter">
           <div className="views">
-              <p className="grid-view"><HiViewGrid/></p>
-              <p className="list-view"><MdViewList/></p>
+            <p className="grid-view">
+              <HiViewGrid />
+            </p>
+            <p className="list-view">
+              <MdViewList />
+            </p>
           </div>
           <DropdownButton className="dropdown-button" title="Featured">
-            <Dropdown.Item href="#/neweswArrival-1">Newest Arrivals</Dropdown.Item>
-            <Dropdown.Item href="#/lowToHigh-2">Price: low to high</Dropdown.Item>
-            <Dropdown.Item href="#/highTolow-3">Price: high to low</Dropdown.Item>
+            <Dropdown.Item href="#/neweswArrival-1">
+              Newest Arrivals
+            </Dropdown.Item>
+            <Dropdown.Item href="#/lowToHigh-2">
+              Price: low to high
+            </Dropdown.Item>
+            <Dropdown.Item href="#/highTolow-3">
+              Price: high to low
+            </Dropdown.Item>
           </DropdownButton>
         </div>
       </div>
       <div className="allShopList">
         <div className="shopSideBarPart">
-        <ShopSideBar/>
+          <ShopSideBar />
         </div>
         {/* <div className="listProducts"> */}
         <div className="gridProducts">
-        <ShopListItemGrid
-            title="Accumsan tincidunt"
-            price="260.00"
-          />
-          <ShopListItemGrid
-            title="Accumsan tincidunt"
-            price="260.00"
-          />
-          <ShopListItemGrid
-            title="Accumsan tincidunt"
-            price="260.00"
-          />
-          <ShopListItemGrid
-            title="Accumsan tincidunt"
-            price="260.00"
-          />
-          <ShopListItemGrid
-            title="Accumsan tincidunt"
-            price="260.00"
-          />
-          <ShopListItemGrid
-            title="Accumsan tincidunt"
-            price="260.00"
-          />
-          <ShopListItemGrid
-            title="Accumsan tincidunt"
-            price="260.00"
-          />
-          <ShopListItemGrid
-            title="Accumsan tincidunt"
-            price="260.00"
-          />
+          <ShopListItemGrid title="Accumsan tincidunt" price="260.00" />
+          <ShopListItemGrid title="Accumsan tincidunt" price="260.00" />
+          <ShopListItemGrid title="Accumsan tincidunt" price="260.00" />
+          <ShopListItemGrid title="Accumsan tincidunt" price="260.00" />
+          <ShopListItemGrid title="Accumsan tincidunt" price="260.00" />
+          <ShopListItemGrid title="Accumsan tincidunt" price="260.00" />
+          <ShopListItemGrid title="Accumsan tincidunt" price="260.00" />
+          <ShopListItemGrid title="Accumsan tincidunt" price="260.00" />
           {/* <ShopListItem
             title="Accumsan tincidunt"
             price="260.00"

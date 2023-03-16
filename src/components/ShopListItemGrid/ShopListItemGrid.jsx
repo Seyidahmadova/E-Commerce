@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 export default function ShopListItemGrid(props) {
   return (
-    <div className="ShopListItemGrid">
+    <div className="ShopListItemGrid" style={{width: `${props.width}`}}>
       <div className="slig-img">
         <img alt="item" src={item}></img>
         <div className="slig-adding">
@@ -17,7 +17,7 @@ export default function ShopListItemGrid(props) {
       </div>  
       <div className="slig-info">
         <div className="slig-title">
-          <p><Link>{props.title}</Link></p>
+          <p><Link to='/product'>{props.title}</Link></p>
         </div>
         <div className="slig-price">
           <p>&#8380;{props.price}</p>

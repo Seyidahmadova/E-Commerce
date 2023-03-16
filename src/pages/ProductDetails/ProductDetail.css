@@ -1,0 +1,214 @@
+.ProductDetail {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.product {
+  width: 70%;
+  margin: 10% auto;
+}
+
+.productIntro {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+/* Product Intro img */
+.allImg {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+}
+
+.pi-imgs {
+  width: 100%;
+  margin: 5% 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.pi-imgs > img {
+  width: 30%;
+  padding: 2%;
+  border: 1px solid var(--gray-color);
+  border-radius: 10px;
+}
+
+/* Product Intro Info */
+.pi-info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.pi-info > h1 {
+  color: var(--pink-color);
+  /* font-size: 25px; */
+}
+
+.rateStar {
+  width: 100%;
+  display: flex;
+}
+
+.rateNum {
+  margin-left: 2%;
+}
+
+.pi-proID {
+  color: var(--gray-color);
+}
+
+.pi-price {
+  font-family: "Jost";
+  font-size: 30px;
+  color: var(--yellow-color);
+}
+
+.pi-about {
+  color: var(--grayViolet);
+}
+
+/* add to cart */
+.addCart {
+  width: 100%;
+  margin: 5% 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.productNum {
+  width: 30%;
+  padding: 1%;
+  border: 1px solid gray;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.productNum > p {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.value {
+  width: 32%;
+  font-family: "Jost";
+  font-size: 16px;
+}
+
+.minus,
+.plus {
+  width: 30%;
+  background-color: var(--orange-color);
+  color: white;
+  border-radius: 50%;
+  font-size: 25px;
+  padding: 0%;
+  cursor: pointer;
+}
+
+.addCartBtn {
+  width: 60%;
+  outline: none;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(17, 8, 34, 1) 0%,
+    rgba(255, 177, 248, 1) 0%,
+    rgba(249, 232, 127, 1) 54%,
+    rgba(249, 207, 129, 1) 100%
+  );
+  color: white;
+  border: none;
+  border-radius: 5px 30px;
+  cursor: pointer;
+}
+
+.addCartBtn:hover {
+  background: black;
+}
+
+/* wishlist */
+.addWishlist {
+  width: 30%;
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.addWishlist > p:first-child {
+  border: 1px solid var(--gray-color);
+  border-radius: 50%;
+  margin-right: 5%;
+  padding: 4% 10%;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.addWishlist > p:last-child {
+  width: 75%;
+  color: var(--gray-color);
+  font-size: 14px;
+}
+.fa {
+  color: var(--gray-color);
+  font-size: 14px;
+}
+
+
+/* PRODUCT ABOUT */
+.productAbout {
+    width: 100%;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.pa-header {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    font-family: "Jost";
+    font-size: 17px;
+}
+
+.pa-header>ol {
+    padding: 3% 0;
+    width: 34%;
+    cursor: pointer;
+}
+
+.cSelected {
+    background-color: var(--dark-violet);
+}
+
+.noncSelected {
+    background-color: var(--light-violet);
+}
+
+.paPart {
+    text-align: left;
+    font-size: 15px;
+    color: var(--grayViolet);
+}
+
+/* OTHER PRODUCTS */
+.otherProducts {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.otherProducts>h1 {
+    color: var(--pink-color);
+    text-align: left;
+    margin-bottom: 5%;
+}

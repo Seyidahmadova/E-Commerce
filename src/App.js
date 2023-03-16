@@ -11,6 +11,7 @@ import SignUp from "./pages/SignUp/SignUp";
 import BlogPage from "./pages/BlogPage/BlogPage";
 import SingleBlog from "./pages/SingleBlog/SingleBlog";
 import ShopList from "./pages/ShopList/ShopList";
+import ProductDetail from "./pages/ProductDetails/ProductDetail";
 // import HeadingBar from "./components/HeadingBar/HeadingBar";
 import Footer from "./components/Footer/Footer";
 function App() {
@@ -29,6 +30,7 @@ function App() {
           <Route path="/blogs" element={<BlogPage/>}/>
           <Route path="/single-blog" element={<SingleBlog/>}/>
           <Route path="/shop" element={<ShopList/>}/>
+          <Route path="/product" element={<ProductDetail/>}/>
           <Route path="/about" element={<AboutUs/>}/>
         </Routes>
         <Footer />
