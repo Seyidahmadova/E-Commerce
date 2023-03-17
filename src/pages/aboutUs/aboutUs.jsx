@@ -29,7 +29,6 @@ export default function AboutUs() {
         <h1>Our Features</h1>
         <OurService />
       </div>
-      <div className="Our Client Say"></div>
     </div>
   );
 }

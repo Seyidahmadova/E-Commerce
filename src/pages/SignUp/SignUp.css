@@ -3,7 +3,7 @@
 }
 
 .signUp-part {
-    width: 30%;
+    width: 40%;
     margin: 7% auto 10% auto;
     padding: 3% 5%;
     display: flex;
@@ -54,15 +54,15 @@
     align-items: center;
 }
 
-.acceptTerm>a>label {
+.acceptTerm>label>a {
     width: 100%;
 }
 
-.acceptTerm>a>label>span {
+.acceptTerm>label>a>span {
     color: var(--darkBlue-color);
 }
 
-.acceptTerm>a>label,
+.acceptTerm>label,
 .acceptTerm>input {
     color: gray;
     font-size: 14px;
@@ -72,7 +72,7 @@
     width: 100%;
 }
 
-.signUp-form>a>button {
+.submitSign {
     width: 100%;
     margin-top: 3%;
     text-align: center;
@@ -83,6 +83,11 @@
     border: none;
     outline: none;
     cursor: pointer;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.submitSign:hover {
+    background-color: var(--btn-color);
 }
 
 .signUp-part>a {
@@ -107,7 +112,7 @@
     .tosignUp {
         font-size: 11px;
     }
-    .signUp-form>a>button {
+    .submitSign {
         font-size: 11px;
         padding: 4% 0;
     }

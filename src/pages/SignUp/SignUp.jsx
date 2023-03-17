@@ -16,9 +16,9 @@ export default function SignUp() {
                     <input type="password" placeholder="Password" className="sUp-passAgain" required />
                     <div className="acceptTerm">
                         <input type="checkbox"/>
-                        <Link to="/terms-&-conditions"><label>I agree all statements of <span>Terms and Conditions.</span></label></Link>
+                        <label>I agree all statements of <Link to="/terms-conditions"><span>Terms and Conditions.</span></Link></label>
                     </div>
-                    <Link to='/'><button type="submit">Sign Up</button></Link>
+                    <Link to='/'><button type="submit" className="submitSign">Sign Up</button></Link>
                 </form>
                 <Link to="/login"><p className="toLogin">Do you have a account? Sign In</p></Link>
             </div>

@@ -56,7 +56,7 @@ export default function HomePage() {
       </div>
       <div className="allBestSeller">
         <h1>Best Sellers</h1>
-        <OwlCarousel items={3} loop autoplay="3000">
+        <OwlCarousel items={4} loop autoplay="3000">
           <BestSeller
             img={bestSeller}
             title="Comfort Handy Craft"

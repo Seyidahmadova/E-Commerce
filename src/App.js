@@ -13,6 +13,10 @@ import SingleBlog from "./pages/SingleBlog/SingleBlog";
 import ShopList from "./pages/ShopList/ShopList";
 import ProductDetail from "./pages/ProductDetails/ProductDetail";
 import CartPage from "./pages/CartPage/CartPage";
+import Wishlist from "./pages/WishList/Wishlist";
+import Terms from "./pages/Allterms/terms";
+import Cookies from "./pages/Allterms/cookies";
+import Privacy from "./pages/Allterms/privacy";
 // import HeadingBar from "./components/HeadingBar/HeadingBar";
 import Footer from "./components/Footer/Footer";
 function App() {
@@ -34,6 +38,10 @@ function App() {
           <Route path="/product" element={<ProductDetail/>}/>
           <Route path="/about" element={<AboutUs/>}/>
           <Route path="/cart" element={<CartPage/>}/>
+          <Route path="/wishlist" element={<Wishlist/>}/>
+          <Route path="/terms-conditions" element={<Terms/>}/>
+          <Route path="/cookies" element={<Cookies/>}/>
+          <Route path="/privacy-policy" element={<Privacy/>}/>
         </Routes>
         <Footer />
       </BrowserRouter>

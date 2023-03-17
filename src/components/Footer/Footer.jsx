@@ -23,8 +23,28 @@ export default function Footer() {
           </div>
         </div>
         <div className="fp-categories">
+          <div className="fp-page information">
+            <p>INFORMATION</p>
+            <ul>
+              <ol>
+                <Link to="/blogs">Blog</Link>
+              </ol>
+              <ol>
+                <Link to="/about">About Us</Link>
+              </ol>
+              <ol>
+                <Link to="/privacy-policy" >Privacy Policy</Link>
+              </ol>
+              <ol>
+                <Link to="/terms-conditions" >Terms & Conditions</Link>
+              </ol>
+              <ol>
+                <Link to="/cookies" >Cookies</Link>
+              </ol>
+            </ul>
+          </div>
           <div className="fp-page categories">
-            <p>Categories</p>
+            <p>CATEGORIES</p>
             <ul>
               <ol>
                 <Link>Laptops & Computers</Link>
@@ -44,7 +64,7 @@ export default function Footer() {
             </ul>
           </div>
           <div className="fp-page customerCare">
-            <p>Customer Care</p>
+            <p>CUSTOMER CARE</p>
             <ul>
               <ol>
                 <Link to="/login">My Account</Link>
@@ -63,26 +83,6 @@ export default function Footer() {
               </ol>
               <ol>
                 <Link to="/faq">Faq</Link>
-              </ol>
-            </ul>
-          </div>
-          <div className="fp-page allPages">
-            <p>Pages</p>
-            <ul>
-              <ol>
-                <Link to="/blogs">Blog</Link>
-              </ol>
-              <ol>
-                <Link>Browse the Shop</Link>
-              </ol>
-              <ol>
-                <Link>Category</Link>
-              </ol>
-              <ol>
-                <Link>Visual Composer Elements</Link>
-              </ol>
-              <ol>
-                <Link>WooCommerce Pages</Link>
               </ol>
             </ul>
           </div>

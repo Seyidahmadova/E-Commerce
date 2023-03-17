@@ -33,10 +33,10 @@ export default function ShopList() {
               Newest Arrivals
             </Dropdown.Item>
             <Dropdown.Item href="#/lowToHigh-2">
-              Price: low to high
+              Price (Low to High)
             </Dropdown.Item>
             <Dropdown.Item href="#/highTolow-3">
-              Price: high to low
+              Price (High to Low)
             </Dropdown.Item>
           </DropdownButton>
         </div>
