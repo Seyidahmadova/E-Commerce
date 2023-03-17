@@ -1,0 +1,186 @@
+.CartPage {
+    width: 100%;
+}
+
+.cart {
+    width: 80%;
+    margin: 5% auto;
+}
+
+.cartTable {
+    width: 100%;
+    border: 1px solid var(--light-yellow);
+}
+
+.cartTable td {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.cartTable>thead {
+    width: 100%;
+    padding: 10% 0;
+    background-color: var(--light-yellow);
+}
+
+.cartTable>thead>tr>th{
+    padding: 2% 0;
+}
+
+.cartTable td div {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.cartTable tbody tr td {
+    padding: 1%;
+}
+
+/* columns */
+
+.proImgCol {
+    width: 11%;
+}
+
+.proName {
+    width: 30%;
+    font-family: 'Jost';
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.proPrice, .proSub, .proDel {
+    width: 14%;
+}
+.proQty {
+    width: 18%;
+}
+
+/* img */
+.proImg {
+    width: 100%;
+    object-fit: cover;
+}
+
+.proImg>img {
+    width: 100%;
+}
+/* qty */
+.qtyBox {
+    width: 70%;
+    justify-content: center;
+    background-color: var(--most-light-violet);
+}
+
+.qtyBox>p {
+    width: 30%;
+    margin: 0;
+    display: inline-block;
+}
+
+.qb-minus, .qb-plus {
+    padding: 3%;
+    cursor: pointer;
+}
+
+/* delete product*/
+.proDelIcon {
+    display: flex;
+    width: 100%;
+    height: 1.5em;
+    cursor: pointer;
+}
+
+/* total */
+.grandTotal {
+    border-top: 1px solid var(--light-yellow);
+    font-weight: bold;
+}
+
+
+.gt-txt {
+    text-align: right;
+    font-size: 18px;
+    margin: 0;
+    color: var(--orange-color);
+}
+
+.gt-total {    
+    margin: 0;
+    font-size: 16px;
+}
+
+/* CART PROCESS */
+.cartProcess {
+    width: 100%;
+    margin: 5% 0;
+    padding: 2%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--light-yellow);
+}
+
+.cp-coupon{
+    width: 50%;
+
+}
+.cp-coupon>input {
+    width: 68%;
+    padding-left: 2%;
+    border: 1px solid var(--orange-color);
+    line-height: 35px;
+}
+
+.cp-coupon>.applyCoupon {
+    width: 30%;
+    line-height: 35px;
+    outline: none;
+    border: none;
+    border: 1px solid var(--orange-color);
+    background-color: var(--yellow-color);
+    transition: background-color 0.5s ease-in-out ;
+    -webkit-transition: background-color 0.5s ease-in-out ;
+    color: white;
+}
+
+.applyCoupon:hover {
+    background-color: var(--btn-color);
+    border-color: var(--btn-color);
+}
+
+.cp-buttons {
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cp-btn {
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}   
+
+.clearCart {
+    width: 45%;
+    background-color: var(--yellow-color);
+    transition: background-color 0.5s ease-in-out ;
+    -webkit-transition: background-color 0.5s ease-in-out ;
+    color: white;
+}
+
+.clearCart:hover {
+    background-color: var(--btn-color);
+}
+
+.shopCart {
+    width: 45%;
+    background-color: var(--btn-color);
+    color: white;
+    transition: background-color 0.5s ease-in-out ;
+    -webkit-transition: background-color 0.5s ease-in-out ;
+}
+
+.shopCart:hover {
+    background-color: var(--yellow-color) ;
+}

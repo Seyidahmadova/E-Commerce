@@ -32,6 +32,7 @@
 /* AUTHOR DATE */
 .blog-autDate {
     width: 70%;
+    margin: 3% 0 1% 0;
     display: flex;
     align-items: center;
     text-align: left;
@@ -139,7 +140,7 @@ span.b-date {
     border-radius: 5px;
     margin: 0;
 }
-.commentForm>button {
+.commentForm>.submit {
     width: 100%;
     background-color: var(--pink-color);
     color: white;
@@ -148,6 +149,10 @@ span.b-date {
     padding: 3% 0;
     margin-top: 5%;
 }
+
+.submit:hover {
+    background-color: black;
+} 
 /* SIDE BAR */
 .sideBar {
     width: 35%;

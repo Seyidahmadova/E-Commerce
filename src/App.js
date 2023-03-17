@@ -12,6 +12,7 @@ import BlogPage from "./pages/BlogPage/BlogPage";
 import SingleBlog from "./pages/SingleBlog/SingleBlog";
 import ShopList from "./pages/ShopList/ShopList";
 import ProductDetail from "./pages/ProductDetails/ProductDetail";
+import CartPage from "./pages/CartPage/CartPage";
 // import HeadingBar from "./components/HeadingBar/HeadingBar";
 import Footer from "./components/Footer/Footer";
 function App() {
@@ -32,6 +33,7 @@ function App() {
           <Route path="/shop" element={<ShopList/>}/>
           <Route path="/product" element={<ProductDetail/>}/>
           <Route path="/about" element={<AboutUs/>}/>
+          <Route path="/cart" element={<CartPage/>}/>
         </Routes>
         <Footer />
       </BrowserRouter>

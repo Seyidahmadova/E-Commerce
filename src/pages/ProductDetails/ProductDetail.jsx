@@ -17,6 +17,20 @@ export default function ProductDetail() {
   const [showDesc, setShowDesc] = useState(true);
   const [showAddInfo, setShowAddInfo] = useState(false);
   const [showRew, setShowRew] = useState(false);
+  const [qty, setQty] = useState(1);
+
+  function counterMinus() {
+    if(qty===1){
+      setQty(1)
+    }
+    else{
+      setQty(qty - 1);
+    }
+  }
+  function counterPlus() {
+    setQty(qty + 1);
+  }
+
 
   const handleAbout = (e) => {
     console.log(e.target.id);
@@ -87,9 +101,9 @@ export default function ProductDetail() {
             </div>
             <div className="addCart">
               <div className="productNum">
-                <p className="minus">-</p>
-                <p className="value">1</p>
-                <p className="plus">+</p>
+                <p className="minus" onClick={counterMinus}>-</p>
+                <p className="value">{qty}</p>
+                <p className="plus" onClick={counterPlus}>+</p>
               </div>
               <button className="addCartBtn">Add to cart</button>
             </div>
@@ -97,7 +111,6 @@ export default function ProductDetail() {
               <p>
                 <i className="fa fa-heart-o"></i>
               </p>
-              {/* <p><AiFillHeart className="wishHeart"/></p> */}
               <p>Add to wishlist</p>
             </div>
           </div>

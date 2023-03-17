@@ -127,6 +127,8 @@
   border: none;
   border-radius: 5px 30px;
   cursor: pointer;
+  transition: background 0.5sn ease-in-out;
+  -webkit-transition: background 0.5s ease-out;
 }
 
 .addCartBtn:hover {

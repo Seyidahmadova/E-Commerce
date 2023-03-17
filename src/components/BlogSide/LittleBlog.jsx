@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export default function LittleBlog(props) {
   return (
     <div className="LittleBlog">
-      <Link to="/blog">
+      <Link to="/single-blog">
         <div className="lBlog-img">
           <img alt="post" src={blogImg}></img>
         </div>

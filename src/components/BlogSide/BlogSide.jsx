@@ -4,19 +4,19 @@ import LittleBlog from "./LittleBlog";
 
 export default function BlogSide() {
     const handleSelectedCategory = (e) => {
+      console.log("name",e.target.className);
+      console.log("list",e.target.classList);
         const pClass = e.target.parentElement;
         if (e.target.className === ("category selectedC")) {
-          e.target.classList.remove("selectedC");
-          e.target.classList.add(" nonSelectedC")
+          e.target.className = "category nonSelectedC";
         }
-        if (e.target.className === ("category nonSelectedC")) {
+        else if (e.target.className === ("category nonSelectedC")) {
           for (let i = 0; i < pClass.childNodes.length; i++) {
             if(pClass.childNodes[i].className === ("category selectedC")){
                 pClass.childNodes[i].className = "category nonSelectedC";
               }
           }
-          e.target.classList.remove("nonSelectedC");
-          e.target.classList.add("selectedC")
+          e.target.className = "category selectedC";
         }
       };
 

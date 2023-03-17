@@ -10,21 +10,25 @@
 
 .PagePath>h1 {
     padding-left: 10%;
+    margin-bottom: 1%;
     color: var(--darkBlue-color);
     font-size: 32px;
-    margin: 0;
+    text-transform: uppercase;
 }
 
 .PagePath>p {
     padding-left: 10%;
 }
 
+.PagePath>p,
 .PagePath>p>a {
     color: black;
     font-family: "Jost";
     text-decoration: none;
+    font-size: 14px;
 }
 
-.PagePath>p>a>span {
+.PagePath>p>span {
+    text-transform: uppercase;
     color: var(--pink-color);
 } 

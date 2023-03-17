@@ -231,7 +231,7 @@ export default function HomePage() {
                   More off this less hello samlande lied much over tightly circa
                   horse taped mightly
                 </p>
-                <Link>
+                <Link to="/single-blog">
                   <button>Read More</button>
                 </Link>
               </div>
@@ -259,7 +259,7 @@ export default function HomePage() {
                   More off this less hello samlande lied much over tightly circa
                   horse taped mightly
                 </p>
-                <Link>
+                <Link to="/single-blog">
                   <button>Read More</button>
                 </Link>
               </div>
@@ -287,7 +287,7 @@ export default function HomePage() {
                   More off this less hello samlande lied much over tightly circa
                   horse taped mightly
                 </p>
-                <Link>
+                <Link to="/single-blog">
                   <button>Read More</button>
                 </Link>
               </div>
