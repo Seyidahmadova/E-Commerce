@@ -6,7 +6,7 @@ import { IoMdCalendar } from "react-icons/io";
 import PagePath from "../../components/PagePath/PagePath";
 import Brands from "../../components/Brands/Brands";
 import BlogSide from "../../components/BlogSide/BlogSide";
-import Comment from "./Comment";
+import Comment from "../../components/Comment/Comment";
 
 export default function SingleBlog() {
   return (
