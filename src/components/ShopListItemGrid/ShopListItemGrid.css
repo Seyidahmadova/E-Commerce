@@ -1,8 +1,9 @@
 .ShopListItemGrid {
-  margin: 0 2% 7% 0;
+  margin: 0 2% 5% 0;
   padding: 0;
-  width: 31%;
-  float: left;
+  flex: 1 1 223px;
+  flex-grow: 0;
+  /* height: 250px; */
 }
 
 .ShopListItemGrid:hover .slig-adding  {

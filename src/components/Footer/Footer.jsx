@@ -44,19 +44,19 @@ export default function Footer() {
             <p>CATEGORIES</p>
             <ul>
               <ol>
-                <Link>Laptops & Computers</Link>
+                <Link to="/shop" >Laptops & Computers</Link>
               </ol>
               <ol>
-                <Link>Cameras & Photography</Link>
+                <Link to="/shop">Cameras & Photography</Link>
               </ol>
               <ol>
-                <Link>Smart Phones & Tablets</Link>
+                <Link to="/shop">Smart Phones & Tablets</Link>
               </ol>
               <ol>
-                <Link>Video Games & Consoles</Link>
+                <Link to="/shop">Video Games & Consoles</Link>
               </ol>
               <ol>
-                <Link>Waterproof Headphones</Link>
+                <Link to="/shop">Waterproof Headphones</Link>
               </ol>
             </ul>
           </div>
