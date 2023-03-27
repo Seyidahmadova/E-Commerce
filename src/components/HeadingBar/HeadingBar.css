@@ -1,12 +1,26 @@
+.navbar-expand .navbar-nav .dropdown-menu {
+  position: static !important;
+  display: flex !important;
+}
+
+
+
 .HeadingBar {
   margin: 0%;
   padding: 0%;
   width: 100%;
-  height: 40px;
+  height:80px;
   background-color: #7e33e0;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
+}
+
+.innerheading{
+  display: flex;
+  justify-content: space-around;
+  gap:15%;
   align-items: center;
 }
 
@@ -20,9 +34,18 @@
 .phone,
 .mail {
   display: flex;
-  flex-direction: row;
   align-items: center;
+  flex-direction: row;
   justify-content: space-between;
+  width: 180px;
+}
+
+
+.mailcol, .phonecol{
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  
 }
 
 .mail a,
@@ -33,7 +56,7 @@
   font-size: 14px;
   line-height: 16px;
   color: #f1f1f1;
-  width: 135px;
+  /* width: 200px; */
   margin-left: 7px;
   text-decoration: none;
 }
@@ -42,10 +65,24 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   gap: 10%;
 }
 
-.headerdroplist div {
+.headerdroplist1 {
+  display: flex;
+  flex-direction: column;
+  gap: 1%;
+  width: 170px;
+}
+
+.dropdown {
+  margin-top: 17px;
+}
+
+
+
+.headerdroplistitem {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -57,9 +94,28 @@
   color: #f1f1f1;
 }
 
+.headerdroplistitem1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  width: 30px;
+  /* color: #f1f1f1; */
+}
+
 .header-icon {
   color: white;
   margin-left: 3px;
   width: 17px;
   height: 17px;
+}
+
+@media (max-width: 991px) {
+  .phoneandmail {
+    margin-left: -10%;
+}
 }

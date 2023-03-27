@@ -18,12 +18,14 @@ import Terms from "./pages/Allterms/terms";
 import Cookies from "./pages/Allterms/cookies";
 import Privacy from "./pages/Allterms/privacy";
 // import HeadingBar from "./components/HeadingBar/HeadingBar";
+// import NavbarPart from "./components/HeadingBar/Navbar";
 import Footer from "./components/Footer/Footer";
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        {/* <HeadingBar /> */}
+        {/* <HeadingBar />
+        <NavbarPart/> */}
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/order-completed" element={<OrderComp />} />

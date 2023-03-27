@@ -56,7 +56,7 @@ export default function HomePage() {
       </div>
       <div className="allBestSeller">
         <h1>Best Sellers</h1>
-        <OwlCarousel items={4} loop autoplay="3000">
+        <OwlCarousel className="owlCarousel" items={4} loop autoplay="3000">
           <BestSeller
             img={bestSeller}
             title="Comfort Handy Craft"
@@ -216,11 +216,11 @@ export default function HomePage() {
             <div className="hlb-blog-content">
               <div className="hlb-bc-authorDate">
                 <p className="bc-author">
-                  <FaPenNib style={{ color: "#FB2E86" }} />
+                  <FaPenNib style={{ color: "#FB2E86", marginRight:"3%"  }} />
                   John Smith
                 </p>
                 <p className="bc-date">
-                  <FaCalendarAlt style={{ color: "#FFA454" }} />7 Mart,2023
+                  <FaCalendarAlt style={{ color: "#FFA454", marginRight:"3%" }} />7 Mart,2023
                 </p>
               </div>
               <div className="hlb-bc-subcontent">
@@ -244,11 +244,11 @@ export default function HomePage() {
             <div className="hlb-blog-content">
               <div className="hlb-bc-authorDate">
                 <p className="bc-author">
-                  <FaPenNib style={{ color: "#FB2E86" }} />
+                  <FaPenNib style={{ color: "#FB2E86", marginRight:"3%"  }} />
                   John Smith
                 </p>
                 <p className="bc-date">
-                  <FaCalendarAlt style={{ color: "#FFA454" }} />7 Mart,2023
+                  <FaCalendarAlt style={{ color: "#FFA454", marginRight:"3%"  }} />7 Mart,2023
                 </p>
               </div>
               <div className="hlb-bc-subcontent">
@@ -272,11 +272,11 @@ export default function HomePage() {
             <div className="hlb-blog-content">
               <div className="hlb-bc-authorDate">
                 <p className="bc-author">
-                  <FaPenNib style={{ color: "#FB2E86" }} />
+                  <FaPenNib style={{ color: "#FB2E86", marginRight:"3%"  }} />
                   John Smith
                 </p>
                 <p className="bc-date">
-                  <FaCalendarAlt style={{ color: "#FFA454" }} />7 Mart,2023
+                  <FaCalendarAlt style={{ color: "#FFA454", marginRight:"3%"  }} />7 Mart,2023
                 </p>
               </div>
               <div className="hlb-bc-subcontent">

@@ -6,7 +6,8 @@ import ImageZoom from "react-image-zooom";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
-import { AiFillStar } from "react-icons/ai";
+import Rating from "@mui/material/Rating";
+import Stack from "@mui/material/Stack";
 import product1 from "../../images/product/product1.jpg";
 import product2 from "../../images/product/product2.jpg";
 import product3 from "../../images/product/product3.jpg";
@@ -20,17 +21,15 @@ export default function ProductDetail() {
   const [qty, setQty] = useState(1);
 
   function counterMinus() {
-    if(qty===1){
-      setQty(1)
-    }
-    else{
+    if (qty === 1) {
+      setQty(1);
+    } else {
       setQty(qty - 1);
     }
   }
   function counterPlus() {
     setQty(qty + 1);
   }
-
 
   const handleAbout = (e) => {
     console.log(e.target.id);
@@ -78,13 +77,13 @@ export default function ProductDetail() {
           <div className="pi-info">
             <h1>Modern Handbag</h1>
             <div className="rateStar">
-              <div className="stars">
-                <AiFillStar className="star" />
-                <AiFillStar className="star" />
-                <AiFillStar className="star" />
-                <AiFillStar className="star" />
-                <AiFillStar className="star" />
-              </div>
+                <Stack spacing={1}>
+                  <Rating
+                    name="half-rating"
+                    defaultValue={0}
+                    // precision={0.5}
+                  />
+                </Stack>
               <p className="rateNum">(22)</p>
             </div>
             <div className="pi-proID">
@@ -101,9 +100,13 @@ export default function ProductDetail() {
             </div>
             <div className="addCart">
               <div className="productNum">
-                <p className="minus" onClick={counterMinus}>-</p>
+                <p className="minus" onClick={counterMinus}>
+                  -
+                </p>
                 <p className="value">{qty}</p>
-                <p className="plus" onClick={counterPlus}>+</p>
+                <p className="plus" onClick={counterPlus}>
+                  +
+                </p>
               </div>
               <button className="addCartBtn">Add to cart</button>
             </div>
