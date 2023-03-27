@@ -1,0 +1,19 @@
+.f-quest {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5%;
+}
+
+.fq-title {
+    color: var(--darkBlue-color);
+    font-size: 18px;
+    font-family: 'Josefin Sans';
+    cursor: pointer;
+}
+
+.fq-answer {
+    color: var(--grayViolet);
+    font-size: 15px;
+    font-family: 'Jost';
+}

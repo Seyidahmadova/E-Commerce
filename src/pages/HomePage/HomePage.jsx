@@ -9,7 +9,7 @@ import newTrend from "../../images/home/newTrend.png";
 import bestSeller from "../../images/home/bestSeller.jpg";
 import newArrival from "../../images/home/newArrival.jpg";
 import offeredProduct from "../../images/home/offeredProduct.png";
-import { FaPenNib, FaCalendarAlt, FaCircle } from "react-icons/fa";
+import { FaCircle } from "react-icons/fa";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
@@ -17,6 +17,7 @@ import OurService from "../../components/OurServices/ourService";
 import NewTrendSlide from "./NewTrendSlide";
 import BestSeller from "./BestSeller";
 import NewArrival from "./NewArrival";
+import LatestBlog from "./LatestBlog";
 
 export default function HomePage() {
   const fTitle = "Best Furniture For Your Castle...";
@@ -209,90 +210,9 @@ export default function HomePage() {
       <div className="homeLatestBlog">
         <h1>Latest Blog</h1>
         <div className="hlb-allblogs">
-          <div className="hlb-blog">
-            <div className="hlb-blog-img">
-              <img alt="blog" src={latestBlog1}></img>
-            </div>
-            <div className="hlb-blog-content">
-              <div className="hlb-bc-authorDate">
-                <p className="bc-author">
-                  <FaPenNib style={{ color: "#FB2E86", marginRight:"3%"  }} />
-                  John Smith
-                </p>
-                <p className="bc-date">
-                  <FaCalendarAlt style={{ color: "#FFA454", marginRight:"3%" }} />7 Mart,2023
-                </p>
-              </div>
-              <div className="hlb-bc-subcontent">
-                <p className="bc-sc-title">
-                  <Link>Top esssential Trends in 2021</Link>
-                </p>
-                <p className="bc-sc-text">
-                  More off this less hello samlande lied much over tightly circa
-                  horse taped mightly
-                </p>
-                <Link to="/single-blog">
-                  <button>Read More</button>
-                </Link>
-              </div>
-            </div>
-          </div>
-          <div className="hlb-blog">
-            <div className="hlb-blog-img">
-              <img alt="blog" src={latestBlog2}></img>
-            </div>
-            <div className="hlb-blog-content">
-              <div className="hlb-bc-authorDate">
-                <p className="bc-author">
-                  <FaPenNib style={{ color: "#FB2E86", marginRight:"3%"  }} />
-                  John Smith
-                </p>
-                <p className="bc-date">
-                  <FaCalendarAlt style={{ color: "#FFA454", marginRight:"3%"  }} />7 Mart,2023
-                </p>
-              </div>
-              <div className="hlb-bc-subcontent">
-                <p className="bc-sc-title">
-                  <Link>Top esssential Trends in 2021</Link>
-                </p>
-                <p className="bc-sc-text">
-                  More off this less hello samlande lied much over tightly circa
-                  horse taped mightly
-                </p>
-                <Link to="/single-blog">
-                  <button>Read More</button>
-                </Link>
-              </div>
-            </div>
-          </div>
-          <div className="hlb-blog">
-            <div className="hlb-blog-img">
-              <img alt="blog" src={latestBlog3}></img>
-            </div>
-            <div className="hlb-blog-content">
-              <div className="hlb-bc-authorDate">
-                <p className="bc-author">
-                  <FaPenNib style={{ color: "#FB2E86", marginRight:"3%"  }} />
-                  John Smith
-                </p>
-                <p className="bc-date">
-                  <FaCalendarAlt style={{ color: "#FFA454", marginRight:"3%"  }} />7 Mart,2023
-                </p>
-              </div>
-              <div className="hlb-bc-subcontent">
-                <p className="bc-sc-title">
-                  <Link>Top esssential Trends in 2021</Link>
-                </p>
-                <p className="bc-sc-text">
-                  More off this less hello samlande lied much over tightly circa
-                  horse taped mightly
-                </p>
-                <Link to="/single-blog">
-                  <button>Read More</button>
-                </Link>
-              </div>
-            </div>
-          </div>
+          <LatestBlog img={latestBlog1} />
+          <LatestBlog img={latestBlog2} />
+          <LatestBlog img={latestBlog3} />
         </div>
       </div>
     </div>

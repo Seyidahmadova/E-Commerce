@@ -11,13 +11,10 @@ export default function Footer() {
             <h1>Hekto</h1>
           </Link>
           <div className="fpm-box">
-            <div className="fpm-mailbox">
-              <input placeholder="Enter Email Address" />
-              <button>Sign Up</button>
-            </div>
             <p>
-              Contact Info
-              <br />
+            For questions and meetings, contact us at <a href="mailto: sample@gmail.com">sample@gmail.com</a> 
+              </p>
+              <p>
               17 Princess Road, London, Greater London NW1 8JR, UK
             </p>
           </div>
@@ -33,13 +30,13 @@ export default function Footer() {
                 <Link to="/about">About Us</Link>
               </ol>
               <ol>
-                <Link to="/privacy-policy" >Privacy Policy</Link>
+                <Link to="/contact" >Contact us</Link>
               </ol>
               <ol>
-                <Link to="/terms-conditions" >Terms & Conditions</Link>
+                {/* <Link to="/terms-conditions" >Terms & Conditions</Link> */}
               </ol>
               <ol>
-                <Link to="/cookies" >Cookies</Link>
+                {/* <Link to="/cookies" >Cookies</Link> */}
               </ol>
             </ul>
           </div>
@@ -89,7 +86,20 @@ export default function Footer() {
         </div>
       </div>
       <div className="f-copy">
-        <p>CEAT&copy;All Rights Reserved</p>
+        <p className="companyName">CEAT&copy;All Rights Reserved</p>
+        <div className="legacy">
+          <ul>
+              <ol>
+                <Link to="/privacy-policy" >Privacy Policy</Link>
+              </ol>
+              <ol>
+                <Link to="/terms-conditions" >Terms & Conditions</Link>
+              </ol>
+              <ol>
+                <Link to="/cookies" >Cookies</Link>
+              </ol>
+          </ul>
+        </div>
         <div className="fc-medias">
           <ul>
             <ol>

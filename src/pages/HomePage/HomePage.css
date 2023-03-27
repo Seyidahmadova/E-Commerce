@@ -39,8 +39,8 @@
 /* OFFERED PRODUCT */
 .homeOfferedProduct {
   width: 100%;
+  padding: 10% 0;
   background-color: var(--light-violet);
-  height: 70vh;
   align-items: center;
   display: flex;
 }
@@ -48,7 +48,6 @@
 .o-product {
   width: 70%;
   display: flex;
-  height: 60vh;
   align-items: center;
   justify-content: center;
   margin: 0% auto;
@@ -57,7 +56,6 @@
 .o-product > span {
   width: 40%;
   margin-right: 3%;
-  height: 100%;
   display: flex;
   object-fit: cover;
   background-color: var(--pinkViolet);
@@ -79,6 +77,7 @@
   color: var(--darkBlue-color);
   font-family: "Josefin Sans";
   font-weight: 600;
+  width: 100%;
 }
 
 .op-detail > p {
@@ -193,77 +192,6 @@
   justify-content: space-between;
 }
 
-.hlb-blog {
-  display: flex;
-  flex-direction: column;
-  width: 30%;
-  border-radius: 10px;
-  box-shadow: 0 2px 2px var(--darkBlue-color);
-  transition: box-shadow 0.3s ease-in-out;
-}
-
-.hlb-blog:hover {
-  box-shadow: 0px 5px 15px #fb2e86;
-}
-
-.hlb-blog-img {
-  width: 100%;
-}
-
-.hlb-blog-img > img {
-  width: 100%;
-  border-radius: 10px;
-}
-
-.hlb-blog-content {
-  width: 96%;
-  padding: 3%;
-}
-
-.hlb-bc-authorDate {
-  width: 100%;
-  text-align: left;
-  display: flex;
-  font-size: 12px;
-  font-weight: 500;
-  font-family: "Jost";
-  color: var(--darkBlue-color);
-}
-
-.hlb-bc-authorDate > .bc-author {
-  width: 40%;
-}
-
-.hlb-bc-authorDate > .bc-date {
-  width: 50%;
-}
-
-.hlb-bc-subcontent {
-  width: 100%;
-  font-family: "Jost";
-  text-align: left;
-}
-
-.bc-sc-title > a {
-  font-size: 18px;
-  font-weight: 500;
-  color: var(--darkBlue-color);
-}
-
-.bc-sc-text {
-  color: #72718f;
-  font-size: 14px;
-}
-
-.hlb-bc-subcontent > a > button {
-  color: var(--darkBlue-color);
-  font-size: 13px;
-  background-color: transparent;
-  outline: none;
-  border: none;
-  cursor: pointer;
-}
-
 /* MEDİA SCREEN */
 @media screen and (max-width: 880px) {
   .hlb-bc-authorDate {
@@ -308,10 +236,26 @@
     width: 80%;
   }
   .op-addToCard > a {
-    width: 40%;
+    width: 35%;
+  }
+  .op-addToCard > a > button,
+  .op-addToCard > .op-price {
+    font-size: 14px;
   }
   .op-price {
     width: 55%;
+  }
+  .o-product > span {
+    width: 48%;
+  }
+  .op-detail {
+    width: 48%;
+  }
+  .op-detail > h1 {
+    font-size: 23px;
+  }
+  .op-detail > p {
+    font-size: 14px;
   }
 }
 
@@ -321,5 +265,9 @@
     max-width: 70%;
     flex: 1 1 250px;
     margin: 0 auto 10% auto;
+  }
+  /* offered product */
+  .o-product {
+    width: 85%;
   }
 }
