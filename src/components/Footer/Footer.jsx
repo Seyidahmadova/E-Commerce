@@ -67,7 +67,7 @@ export default function Footer() {
                 <Link to="/login">My Account</Link>
               </ol>
               <ol>
-                <Link>Discount</Link>
+                <Link to="/discount" >Discount</Link>
               </ol>
               <ol>
                 <Link>Returns</Link>

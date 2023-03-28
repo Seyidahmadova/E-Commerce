@@ -1,0 +1,54 @@
+.DiscountCardPage {
+    display: flex;
+    flex: 1 1 360px;
+    flex-grow: 0;
+    position: relative;
+    margin-bottom: 3%;
+    text-align: left;
+}
+
+.dp-title {
+    width: 30%;
+    margin-top: 5%;
+    font-size: 35px;
+    color: var(--yellow-color);
+    text-decoration: underline;
+}
+
+.DiscountCardPage img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.dcp-content {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    width: 100%;
+    margin: 25% 0 0 0%;
+    padding: 3% ;
+    position: absolute;
+    text-align: center;
+    background-color: rgb(214, 214, 214, 0.3);
+}
+
+.dcp-content h1 {
+    color: white;
+    font-size: 35px;
+}
+
+.dcp-content a {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.startShop {
+    font-family: 'Josefin Sans';
+    width: 100%;
+    padding: 3% 0;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--orange-color);
+    color: white;
+}

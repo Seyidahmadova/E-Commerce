@@ -17,6 +17,7 @@ import Wishlist from "./pages/WishList/Wishlist";
 import Terms from "./pages/Allterms/terms";
 import Cookies from "./pages/Allterms/cookies";
 import Privacy from "./pages/Allterms/privacy";
+import Discount from "./pages/Discount/Discount";
 // import HeadingBar from "./components/HeadingBar/HeadingBar";
 // import NavbarPart from "./components/HeadingBar/Navbar";
 import Footer from "./components/Footer/Footer";
@@ -44,6 +45,7 @@ function App() {
           <Route path="/terms-conditions" element={<Terms/>}/>
           <Route path="/cookies" element={<Cookies/>}/>
           <Route path="/privacy-policy" element={<Privacy/>}/>
+          <Route path="/discount" element={<Discount/>}/>
         </Routes>
         <Footer />
       </BrowserRouter>
