@@ -12,10 +12,10 @@ export default function BlogView() {
         </div>
         <div className="blogInfo">
           <div className="blog-autDate">
-            <p><ImPen className="icon pen" /><span className="b-author">              
+            <p><ImPen className="icon pen" /><span className="bad-author">              
               Ali Ahmedov </span>
             </p>
-            <p><IoMdCalendar className="icon calendar" /><span className="b-date">
+            <p><IoMdCalendar className="icon calendar" /><span className="bad-date">
               12 March 2023</span>
             </p>
           </div>
@@ -27,7 +27,7 @@ export default function BlogView() {
               malesuada vitae ultrices in in neque, porta dignissim. Adipiscing
               purus, cursus vulputate id id dictum at.
             </p>
-            <Link><button>Read More</button></Link>
+            <Link to="/single-blog"><button>Read More</button></Link>
           </div>
         </div>
     </div>

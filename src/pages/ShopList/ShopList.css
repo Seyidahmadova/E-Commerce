@@ -1,77 +1,91 @@
 .ShopList {
-    width: 100%;
+  width: 100%;
 }
 .list-about {
-    width: 85%;
-    margin: 5% auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  width: 80%;
+  margin: 5% auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .la-title {
-    width: 45%;
-    text-align: left;
+  width: 45%;
+  text-align: left;
 }
 
-.la-title>h1 {
-    color: var(--darkBlue-color);
-    margin: 0;
+.la-title > h1 {
+  color: var(--darkBlue-color);
+  margin: 0;
 }
-.la-title>p {
-    color: var(--grayViolet);
+.la-title > p {
+  color: var(--grayViolet);
 }
 
 /* views */
 .list-filter {
-    display: flex;
-    width: 30%;
+  display: flex;
+  width: 30%;
+  justify-content: space-around;
 }
 .views {
-    display: flex;
-    width: 20%;
-    justify-content: space-between;
+  display: flex;
+  width: 20%;
+  justify-content: space-between;
 }
 
-.views>p {
-    cursor: pointer;
-    color: var(--yellow-color);
+.views > p {
+  cursor: pointer;
+  color: var(--yellow-color);
 }
 
 /* FILTER */
-.dropdown-button {
-    width: 70%;
+.select-button {
+  width: 55%;
+  outline: none;
 }
 
-.dropdown-button>button ,
-.dropdown-button>button:active {
-    background-color: transparent!important;
-    color: var(--darkBlue-color)!important;
-    border: 1px solid var(--darkBlue-color)!important;
+.select-button,
+.select-button:active {
+  background-color: transparent !important;
+  color: var(--darkBlue-color) !important;
+  border: 1px solid var(--darkBlue-color) !important;
+  border-radius: 5px;
+  padding-left: 5px;
+  font-size: 15px;
 }
+
+select>option:hover {
+  background-color: yellow;
+}
+
 /* all shop list */
 .allShopList {
-    width: 85%;
-    display: flex;
-    justify-content: space-between;
-    margin: 5% auto 10% auto;
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  margin: 5% auto 10% auto;
 }
 
 /* SHOP SIDEBAR */
 .shopSideBarPart {
-    width: 24%;
+  width: 30%;
+}
+
+.menuSideBar {
+  width: 5%;
+  margin-right: 5%;
 }
 
 /* LIST OF PRODUCTS */
 .listProducts {
-    width: 70%;
-    display: flex;
-    flex-direction: column;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
 }
 
 .gridProducts {
-    width: 70%;
-    display: flex;
-    flex-wrap: wrap;
-    height: min-content;
+  display: flex;
+  flex-wrap: wrap;
+  height: min-content;
 }

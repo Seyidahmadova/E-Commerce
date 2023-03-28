@@ -1,15 +1,42 @@
 import "./ShopList.css";
-import ShopListItem from "../../components/ShopListItem/ShopListItem";
 import ShopListItemGrid from "../../components/ShopListItemGrid/ShopListItemGrid";
 import PagePath from "../../components/PagePath/PagePath";
 import Brands from "../../components/Brands/Brands";
 import ShopSideBar from "../../components/shopSideBar/shopSideBar";
-import Dropdown from "react-bootstrap/Dropdown";
-import DropdownButton from "react-bootstrap/DropdownButton";
 import { HiViewGrid } from "react-icons/hi";
+import { slide as Menu } from "react-burger-menu";
 import { MdViewList } from "react-icons/md";
+import { useState, useEffect, useRef } from "react";
 
 export default function ShopList() {
+
+  const refContainer = useRef(null);
+  // get width of window
+  const [screenSize, getDimension] = useState({
+    dynamicWidth: window.innerWidth,
+    dynamicHeight: window.innerHeight,
+  });
+  const setDimension = () => {
+    getDimension({
+      dynamicWidth: window.innerWidth,
+      dynamicHeight: window.innerHeight,
+    });
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", setDimension);
+
+    return () => {
+      window.removeEventListener("resize", setDimension);
+    };
+  }, [screenSize]);
+
+  // get width of element
+  const [elmWidth, setWidth] = useState(0);
+  useEffect(() => {
+    setWidth(refContainer.offsetWidth);
+  }, []);
+
   return (
     <div className="ShopList">
       <PagePath title="Shop" path="/shop" curPage="Shop" />
@@ -28,25 +55,27 @@ export default function ShopList() {
               <MdViewList />
             </p>
           </div>
-          <DropdownButton className="dropdown-button" title="Featured">
-            <Dropdown.Item href="#/neweswArrival-1">
-              Newest Arrivals
-            </Dropdown.Item>
-            <Dropdown.Item href="#/lowToHigh-2">
-              Price (Low to High)
-            </Dropdown.Item>
-            <Dropdown.Item href="#/highTolow-3">
-              Price (High to Low)
-            </Dropdown.Item>
-          </DropdownButton>
+          <select className="select-button">
+            <option value="Featured1">Featured</option>
+            <option value="newest_arrivals">Newest Arrivals</option>
+            <option value="price_low_to_high">Price (Low to High)</option>
+            <option value="price_high _to_low">Price (High to Low)</option>
+          </select>
         </div>
       </div>
       <div className="allShopList">
-        <div className="shopSideBarPart">
-          <ShopSideBar />
-        </div>
-        {/* <div className="listProducts"> */}
-        <div className="gridProducts">
+        {screenSize.dynamicWidth < 990 ? (
+          <div className="menuSideBar">
+            <Menu pageWrapId={"page-wrap"}>
+              <ShopSideBar ref={refContainer} />
+            </Menu>
+          </div>
+        ) : (
+          <div className="shopSideBarPart">
+            <ShopSideBar ref={refContainer} />
+          </div>
+        )}
+        <div className="gridProducts" style={{ width: `${90 - elmWidth}%` }}>
           <ShopListItemGrid title="Accumsan tincidunt" price="260.00" />
           <ShopListItemGrid title="Accumsan tincidunt" price="260.00" />
           <ShopListItemGrid title="Accumsan tincidunt" price="260.00" />
@@ -55,31 +84,6 @@ export default function ShopList() {
           <ShopListItemGrid title="Accumsan tincidunt" price="260.00" />
           <ShopListItemGrid title="Accumsan tincidunt" price="260.00" />
           <ShopListItemGrid title="Accumsan tincidunt" price="260.00" />
-          {/* <ShopListItem
-            title="Accumsan tincidunt"
-            price="260.00"
-            about="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
-          />
-          <ShopListItem
-            title="Accumsan tincidunt"
-            price="260.00"
-            about="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
-          />
-          <ShopListItem
-            title="Accumsan tincidunt"
-            price="260.00"
-            about="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
-          />
-          <ShopListItem
-            title="Accumsan tincidunt"
-            price="260.00"
-            about="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
-          />
-          <ShopListItem
-            title="Accumsan tincidunt"
-            price="260.00"
-            about="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo."
-          /> */}
         </div>
       </div>
       <Brands />
