@@ -73,7 +73,7 @@ export default function Footer() {
                 <Link>Returns</Link>
               </ol>
               <ol>
-                <Link>Order History</Link>
+                <Link to="/order-history">Order History</Link>
               </ol>
               <ol>
                 <Link>Order Tracking</Link>
