@@ -1,10 +1,11 @@
 .PagePath {
     width: 100%;   
-    height: 35vh;
+    /* height: 40vh; */
+    padding: 15% 0 3% 0;
     background-color: var(--most-light-violet);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     text-align: left;
 }
 

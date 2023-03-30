@@ -1,15 +1,26 @@
-.navbar-expand .navbar-nav .dropdown-menu {
-  position: static !important;
-  display: flex !important;
+.dropdown {
+  margin-top: -2px !important;
 }
 
+.container {
+  margin-left: 2.5% !important;
+}
 
+.nav-link {
+  font-family: "Josefin Sans" !important;
+  font-style: normal;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  line-height: 16px !important;
+  color: #f1f1f1;
+  margin-left: 2px;
+}
 
 .HeadingBar {
   margin: 0%;
   padding: 0%;
   width: 100%;
-  height:80px;
+  height: 44px;
   background-color: #7e33e0;
   display: flex;
   flex-direction: row;
@@ -17,10 +28,9 @@
   align-items: center;
 }
 
-.innerheading{
+.innerheading {
   display: flex;
-  justify-content: space-around;
-  gap:15%;
+  justify-content: center;
   align-items: center;
 }
 
@@ -28,7 +38,8 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  gap: 15%;
+  gap: 10%;
+  margin-left: 10%;
 }
 
 .phone,
@@ -40,47 +51,20 @@
   width: 180px;
 }
 
-
-.mailcol, .phonecol{
+.mailcol,
+.phonecol {
   display: flex;
-  /* justify-content: center; */
   align-items: center;
-  
-}
-
-.mail a,
-.phone a {
-  font-family: "Josefin Sans";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 16px;
-  color: #f1f1f1;
-  /* width: 200px; */
-  margin-left: 7px;
-  text-decoration: none;
 }
 
 .headerdroplist {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
-  gap: 10%;
+  gap: 3%;
+  width: 98%;
 }
-
-.headerdroplist1 {
-  display: flex;
-  flex-direction: column;
-  gap: 1%;
-  width: 170px;
-}
-
-.dropdown {
-  margin-top: 17px;
-}
-
-
 
 .headerdroplistitem {
   display: flex;
@@ -104,7 +88,6 @@
   font-size: 14px;
   line-height: 16px;
   width: 30px;
-  /* color: #f1f1f1; */
 }
 
 .header-icon {
@@ -114,8 +97,29 @@
   height: 17px;
 }
 
-@media (max-width: 991px) {
-  .phoneandmail {
-    margin-left: -10%;
+.cardicon {
+  color: white;
+  margin-left: 3px;
+  width: 20px;
+  height: 20px;
+  margin-top: -7px;
 }
+
+@media (max-width: 991.5px) {
+  .headerdroplist {
+    display: flex;
+    justify-content: space-around;
+    width: 98%;
+    margin-left: 2%;
+  }
+
+  .headerdroplistitem {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .headerdroplistitem1 {
+    font-size: 12px;
+    line-height: 14px;
+  }
 }

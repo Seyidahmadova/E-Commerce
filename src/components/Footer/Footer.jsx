@@ -33,10 +33,7 @@ export default function Footer() {
                 <Link to="/contact" >Contact us</Link>
               </ol>
               <ol>
-                {/* <Link to="/terms-conditions" >Terms & Conditions</Link> */}
-              </ol>
-              <ol>
-                {/* <Link to="/cookies" >Cookies</Link> */}
+                <Link to="/faq">Faq</Link>
               </ol>
             </ul>
           </div>
@@ -77,9 +74,6 @@ export default function Footer() {
               </ol>
               <ol>
                 <Link>Order Tracking</Link>
-              </ol>
-              <ol>
-                <Link to="/faq">Faq</Link>
               </ol>
             </ul>
           </div>

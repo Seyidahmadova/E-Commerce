@@ -1,0 +1,130 @@
+.dropdown {
+  margin-top: 0px !important;
+}
+
+.homedrop,
+.dropdown-item1 {
+  color: #b8b7ad !important ;
+  font-family: "Josefin Sans" !important;
+  font-style: normal;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  line-height: 16px !important;
+}
+
+.dropdown-menu.show {
+  display: block;
+  position: relative !important;
+  inset: 0px auto auto 0px;
+  transform: translate3d(2px, 2px, 0px) !important;
+  background-color: inherit;
+  border: none;
+}
+
+.brand {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 700;
+  /* font-size: 34px; */
+  line-height: 34px;
+  /* color: #0d0e43; */
+  margin-left: 3%;
+}
+
+.navcollapse {
+  margin-top: 3px;
+  margin-left: 10%;
+}
+
+.NavbarPart {
+  position: fixed;
+  width: 100%;
+  z-index: 2001;
+  background-color: white;
+  padding: 1% 0 1% 0%;
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+/* Position and sizing of burger button */
+.NavbarPart .bm-burger-button {
+  position: relative;
+  width: 36px;
+  height: 30px;
+
+}
+
+/* Color/shape of burger icon bars */
+.NavbarPart .bm-burger-bars {
+  background: #373a47;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.NavbarPart .bm-burger-bars-hover {
+  background: #a90000;
+}
+
+/* Position and sizing of clickable cross button */
+.NavbarPart .bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.NavbarPart .bm-cross {
+  background: #bdc3c7;
+}
+
+/*
+  Sidebar wrapper styles
+  Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+  */
+.NavbarPart .bm-menu-wrap {
+  position: fixed !important;
+  height: 100%;
+}
+
+/* General sidebar styles */
+.NavbarPart .bm-menu {
+  /* margin-right: -20%; */
+  background: #373a47;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.NavbarPart .bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
+}
+
+/* Individual item */
+.NavbarPart .bm-item {
+  display: inline-block;
+}
+
+/* Styling of overlay */
+.NavbarPart .bm-overlay {
+  background: rgba(0, 0, 0, 0) !important;
+  width: 30% !important;
+}
+
+/* Individual item */
+.NavbarPart .bm-item {
+  display: inline-block;
+
+  color: #d1d1d1;
+  margin-bottom: 10px;
+  text-align: left;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.NavbarPart .bm-item:hover {
+  color: #ffffff;
+}
