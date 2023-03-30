@@ -28,7 +28,6 @@ export default function NavbarPart() {
         <Nav.Link href="#products">Products</Nav.Link>
         <Nav.Link href="#blog">Blog</Nav.Link>
         <Nav.Link href="#shop">Shop</Nav.Link>
-        <Nav.Link href="#contact">Contact</Nav.Link>
       </div>
         <div className="nSearcArea">
           <Form.Control

@@ -4,7 +4,7 @@
 
 .homedrop,
 .dropdown-item1 {
-  color: #b8b7ad !important ;
+  /* color: #b8b7ad !important ; */
   font-family: "Josefin Sans" !important;
   font-style: normal;
   font-weight: 400 !important;
@@ -12,7 +12,11 @@
   line-height: 16px !important;
 }
 
-.dropdown-menu.show {
+.dropdown-toggle{
+  margin-top: 3%;
+}
+
+.dropdown-toggle:focus .nSearchArea .dropdown-menu.show {
   display: block;
   position: relative !important;
   inset: 0px auto auto 0px;
@@ -20,6 +24,7 @@
   background-color: inherit;
   border: none;
 }
+
 
 .brand {
   font-family: "Josefin Sans";
@@ -29,6 +34,11 @@
   line-height: 34px;
   /* color: #0d0e43; */
   margin-left: 3%;
+}
+
+.navbar-brand{
+  margin-left: 8%;
+    margin-top: 1%;
 }
 
 .navcollapse {
@@ -166,4 +176,30 @@
 .extendNav .nSearcArea {
   display: flex;
   width: 30%;
+}
+
+@media (max-width:989.5px){
+  .navPages{
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-control{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .dropdown-menu.show {
+    /* color: #b8b7ad !important ; */
+    display: block;
+    position: relative !important;
+    inset: 0px auto auto 0px;
+    transform: translate3d(2px, 2px, 0px) !important;
+    background-color: inherit !important;
+    border: none;
+  }
+  
+  .dropdown-item1{
+    color: #b8b7ad !important ;
+  }
 }
