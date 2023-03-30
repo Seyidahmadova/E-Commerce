@@ -22,6 +22,7 @@ export default function BlogSide() {
 
     return(
     <div className="BlogSide">
+        
         <div className="searchArea">
             <h1>Search</h1>
             <div className="searchInput">
@@ -31,6 +32,7 @@ export default function BlogSide() {
               </button>
             </div>
           </div>
+
           <div className="blogCategories">
             <h1>Categories</h1>
             <div className="cList">
@@ -57,8 +59,12 @@ export default function BlogSide() {
               </p>
             </div>
           </div>
+       
+
           <div className="recentPosts">
             <h1>Recent Posts</h1>
+          
+            <div className="eachPost">
             <LittleBlog
               title="It is a long established fact"
               detail="March 12 2023"
@@ -71,11 +77,14 @@ export default function BlogSide() {
               title="It is a long established fact"
               detail="March 12 2023"
             />
+            </div>
+          
           </div>
 
           <div className="saleProducts">
             <h1>Sale Products</h1>
-            <LittleBlog
+           <div className="eachProduct">
+           <LittleBlog
               title="It is a long established fact"
               detail="35 &#8380;"
             />
@@ -87,6 +96,7 @@ export default function BlogSide() {
               title="It is a long established fact"
               detail="35 &#8380;"
             />
+           </div>
           </div>
 
           <div className="b-smedias">
@@ -111,3 +121,4 @@ export default function BlogSide() {
           </div>
     </div>
 );}
+  

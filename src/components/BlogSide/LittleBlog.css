@@ -41,3 +41,53 @@ a .bDetail {
     font-family: 'Jost';
     font-size: 14px;
 }
+
+@media(max-width:737.5px){
+
+    .blog-area {
+        width: 100%;
+    }
+    
+    .allBlog-page{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .blogCategories, .recentPosts, .saleProducts, .b-smedias {
+        margin: 20% 0;
+    }
+
+    .BlogSide h1 {
+        margin-bottom: 4%;
+    }
+
+    .cList {
+        display: flex;
+        flex-direction: row;
+        gap: 6%;
+        margin-top: -5%;
+        flex-flow: nowrap;
+    }
+
+    .eachPost, .eachProduct{
+        display: flex;
+        gap:11%;
+    }
+
+    .LittleBlog>a {
+        margin-bottom: 6%;
+        display: flex;
+        gap: 9px;
+    }
+
+    a>.lBlog-img {
+        width: 41%;
+        object-fit: cover;
+    }
+
+    a>.lBlogInfo {
+        width: 166px;
+    }
+    
+
+}
