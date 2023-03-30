@@ -64,7 +64,7 @@ export default function ShopList() {
         </div>
       </div>
       <div className="allShopList">
-        {screenSize.dynamicWidth < 990 ? (
+        {screenSize.dynamicWidth < 991 ? (
           <div className="menuSideBar">
             <Menu pageWrapId={"page-wrap"} className="shopListMenu">
               <ShopSideBar ref={refContainer} />

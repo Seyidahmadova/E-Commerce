@@ -20,14 +20,14 @@ import Privacy from "./pages/Allterms/privacy";
 import Discount from "./pages/Discount/Discount";
 import OrderHistory from "./pages/OrderHistory/OrderHistory";
 import HeadingBar from "./components/HeadingBar/HeadingBar";
-import NavbarPart from "./components/HeadingBar/Navbar";
+// import NavbarPart from "./components/HeadingBar/Navbar";
 import Footer from "./components/Footer/Footer";
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
         <HeadingBar />
-        <NavbarPart/>
+        {/* <NavbarPart/> */}
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/order-completed" element={<OrderComp />} />

@@ -4,10 +4,34 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { RxPerson } from "react-icons/rx";
 import { BsHeart, BsCart2 } from "react-icons/bs";
+import NavbarPart from "./Navbar";
+import { slide as Menu } from "react-burger-menu";
+import { useState, useEffect, useRef } from "react";
 import "./HeadingBar.css";
 
 export default function HeadingBar() {
+  const refContainer = useRef(null);
+  // get width of window
+  const [screenSize, getDimension] = useState({
+    dynamicWidth: window.innerWidth,
+    dynamicHeight: window.innerHeight,
+  });
+  const setDimension = () => {
+    getDimension({
+      dynamicWidth: window.innerWidth,
+      dynamicHeight: window.innerHeight,
+    });
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", setDimension);
+
+    return () => {
+      window.removeEventListener("resize", setDimension);
+    };
+  }, [screenSize]);
   return (
+    <div className="HeadNav">
     <Navbar className="HeadingBar">
       <div className="headerdroplist">
         <NavDropdown
@@ -51,5 +75,34 @@ export default function HeadingBar() {
         </div>
       </div>
     </Navbar>
+    <div className="nPartBrand">
+    {/* <Navbar.Brand href="#" className="brand">
+        Hekto
+      </Navbar.Brand>  */}
+    {screenSize.dynamicWidth < 990 ? 
+    <div className="burgerNav">
+      <Menu
+        pageWrapId={"page-wrap"}
+        outerContainerId={"outer-container"}
+        className="menubar"
+      >
+        <NavbarPart  ref={refContainer}  />
+      </Menu>
+      <Navbar.Brand href="#" className="brand">
+        Hekto
+      </Navbar.Brand> 
+    </div>
+    :
+    (
+    <div className="extendNav">
+      <Navbar.Brand href="#" className="brand">
+        Hekto
+      </Navbar.Brand> 
+      <NavbarPart ref={refContainer} />
+    </div>)
+    }
+    
+    </div>
+    </div>
   );
 }

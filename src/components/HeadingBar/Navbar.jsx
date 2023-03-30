@@ -1,20 +1,13 @@
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import { slide as Menu } from "react-burger-menu";
 import "./Navbar.css";
 
 export default function NavbarPart() {
   return (
     <div className="NavbarPart">
-
-      <Menu
-        pageWrapId={"page-wrap"}
-        outerContainerId={"outer-container"}
-        className="menubar"
-      >
+      <div className="navPages">
         <NavDropdown
           title="Home"
           id="navbarScrollingDropdown"
@@ -36,8 +29,8 @@ export default function NavbarPart() {
         <Nav.Link href="#blog">Blog</Nav.Link>
         <Nav.Link href="#shop">Shop</Nav.Link>
         <Nav.Link href="#contact">Contact</Nav.Link>
-
-        <Form className="d-flex">
+      </div>
+        <div className="nSearcArea">
           <Form.Control
             type="search"
             placeholder="Search"
@@ -45,11 +38,8 @@ export default function NavbarPart() {
             aria-label="Search"
           />
           <Button variant="outline-success">Search</Button>
-        </Form>
-      </Menu>
-      <Navbar.Brand href="#" className="brand">
-        Hekto
-      </Navbar.Brand>
+        </div>
+
     </div>
   );
 }
