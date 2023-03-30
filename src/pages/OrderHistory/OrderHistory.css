@@ -1,0 +1,86 @@
+.OrderHistoryPage {
+    width: 100%;
+}
+
+.ohp-tablepart {
+    width: 80%;
+    margin: 7% auto;
+}
+
+.ohTable {
+    width: 100%;
+    border: 1px solid var(--light-yellow);
+}
+
+.ohTable td {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.ohTable>thead {
+    width: 100%;
+    padding: 10% 0;
+    background-color: var(--light-yellow);
+}
+
+.ohTable>thead>tr>th{
+    padding: 2% 0;
+    font-family: "Josefin Sans";
+    color: var(--yellow-color);
+}
+
+.ohTable>tbody  >tr {
+    border-bottom: 2px solid var(--light-yellow);
+}
+
+.ohTable td div {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.ohTable tbody tr td {
+    padding: 1%;
+}
+
+/* columns */
+
+/* img */
+.ohImgCol {
+    width: 12%;
+}
+.ohImg {
+    width: 100%;
+}
+
+.ohImg>img {
+    object-fit: cover;
+    width: 100%;
+}
+
+
+.ohName {
+    width: 38%;
+    font-family: 'Jost';
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.ohPrice, .ohAdding {
+    width: 24%;
+}
+
+/* add to cart */
+.oh-addCart {
+    width: 100%;
+}
+
+.oh-addCart>button {
+    width: 75%;
+    padding: 3% 0;
+    background-color: var(--orange-color);
+    outline: none;
+    border: none;
+    border-radius: 5px;    
+}
+
+

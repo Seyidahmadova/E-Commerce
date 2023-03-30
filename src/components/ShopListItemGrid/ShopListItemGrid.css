@@ -1,0 +1,132 @@
+.ShopListItemGrid {
+  margin: 0 2% 5% 0;
+  padding: 0;
+  flex: 1 1 223px;
+  flex-grow: 0;
+  /* height: 250px; */
+}
+
+.ShopListItemGrid:hover .slig-adding  {
+    visibility: visible;
+}
+
+.ShopListItemGrid:hover .slig-addingCart  {
+  visibility: visible;
+}
+
+.slig-img {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.slig-img > img {
+    width: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.slig-adding {
+  width: 15%;
+  margin: 0 auto;
+  position: absolute;
+  top: 10%;
+  left: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  visibility: hidden;
+  transition: visibility 0.3s ease-in-out;
+}
+
+.slig-adding>p {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-bottom: 40%;
+    padding: 20% 0;
+}
+
+.addIcon {
+    color: var(--darkBlue-color);
+}
+
+.slig-addingCart {
+  width: 67%;
+  position: absolute;
+  bottom: 5%;
+  right: 15%;
+  cursor: pointer;
+  visibility: hidden;
+  transition: visibility 0.2s ease-in-out;
+}
+
+.slig-addingCart>button {
+  width: 100%;
+  margin: 0;
+  background-color: white;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  color: var(--darkBlue-color);
+  vertical-align: middle;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.slig-addingCart>button:hover {
+  background-color: var(--orange-color);
+  color: white;
+}
+
+.addIcon.cart {
+  width: 10%;
+  margin-right: 5%;
+  color: var(--darkBlue-color);
+}
+
+.slig-addingCart>button:hover .cart {
+  color: white;
+}
+
+/* info */
+.slig-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.slig-title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slig-title > p {
+  width: 100%;
+  margin: 3% 0 0 0;
+}
+
+.slig-title > p > a {
+  text-decoration: none;
+  width: 100%;
+  color: var(--darkBlue-color);
+  font-size: 18px;
+  font-family: "Josefin Sans";
+}
+
+.slig-price {
+  width: 100%;
+  color: var(--darkBlue-color);
+  font-size: 15px;
+  font-family: "Josefin Sans";
+}
+
+.slig-price > p {
+  margin: 2% 0;
+}
+

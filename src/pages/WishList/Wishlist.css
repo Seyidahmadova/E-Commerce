@@ -1,0 +1,89 @@
+.WishlistPage {
+    width: 100%;
+}
+
+.wishlist {
+    width: 80%;
+    margin: 7% auto;
+}
+
+.wishTable {
+    width: 100%;
+    border: 1px solid var(--light-yellow);
+}
+
+.wishTable td {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.wishTable>thead {
+    width: 100%;
+    padding: 10% 0;
+    background-color: var(--light-yellow);
+}
+
+.wishTable>thead>tr>th{
+    padding: 2% 0;
+    font-family: "Josefin Sans";
+    color: var(--yellow-color);
+}
+
+.wishTable td div {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.wishTable tbody tr td {
+    padding: 1%;
+}
+
+/* columns */
+
+.wlImgCol {
+    width: 12%;
+}
+
+.wlName {
+    width: 34%;
+    font-family: 'Jost';
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.wlPrice, .wlAdding, .wlDel {
+    width: 18%;
+}
+
+/* add to cart */
+.wl-addCart {
+    width: 100%;
+}
+
+.wl-addCart>button {
+    width: 75%;
+    padding: 3% 0;
+    background-color: var(--orange-color);
+    outline: none;
+    border: none;
+    border-radius: 5px;    
+}
+
+/* img */
+.wlImg {
+    width: 100%;
+    object-fit: cover;
+}
+
+.wlImg>img {
+    width: 100%;
+}
+
+
+/* delete product*/
+.wlDelIcon {
+    display: flex;
+    width: 100%;
+    height: 1.5em;
+    cursor: pointer;
+}

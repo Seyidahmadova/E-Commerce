@@ -1,0 +1,70 @@
+.hlb-blog {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: 0 2px 2px var(--darkBlue-color);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .hlb-blog:hover {
+    box-shadow: 0px 5px 15px #fb2e86;
+  }
+  
+  .hlb-blog-img {
+    width: 100%;
+  }
+  
+  .hlb-blog-img > img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .hlb-blog-content {
+    width: 96%;
+    padding: 3%;
+  }
+  
+  .hlb-bc-authorDate {
+    width: 100%;
+    text-align: left;
+    display: flex;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: "Jost";
+    color: var(--darkBlue-color);
+  }
+  
+  .hlb-bc-authorDate > .bc-author {
+    width: 40%;
+  }
+  
+  .hlb-bc-authorDate > .bc-date {
+    width: 50%;
+  }
+  
+  .hlb-bc-subcontent {
+    width: 100%;
+    font-family: "Jost";
+    text-align: left;
+  }
+  
+  .bc-sc-title > a {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--darkBlue-color);
+  }
+  
+  .bc-sc-text {
+    color: #72718f;
+    font-size: 14px;
+  }
+  
+  .hlb-bc-subcontent > a > button {
+    color: var(--darkBlue-color);
+    font-size: 13px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+  }

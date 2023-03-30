@@ -1,193 +1,215 @@
 .footer {
-    width: 100%;
-    bottom: 0;
-    right: 0;
-    background-color: var(--light-violet);
+  width: 100%;
+  bottom: 0;
+  right: 0;
+  background-color: var(--light-violet);
 }
 
 .f-pages {
-    width: 72%;
-    display: flex;
-    margin: 0 auto;
-    padding: 5% 0;
-    justify-content: space-between;
+  width: 85%;
+  display: flex;
+  margin: 0 auto;
+  padding: 5% 0;
+  justify-content: space-between;
 }
 
 .fp-categories {
-    width: 56%;
-    display: flex;
-    flex-wrap: wrap;
+  width: 65%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .fp-page {
-    flex: 1 1 150px;
+  flex: 1 1 150px;
 }
 
-.fpm-box  {
-    display: flex;
-    flex-direction: column;
+.fp-page a {
+  color: var(--grayViolet);
+  background: linear-gradient(
+      90deg,
+      rgba(0, 100, 200, 1) 0%,
+      rgba(255, 0, 180, 1) 14%,
+      rgba(253, 29, 29, 1) 38%,
+      rgba(60, 83, 159, 1) 54%,
+      rgba(255, 4, 161, 1) 76%,
+      rgba(253, 29, 29, 1) 86%,
+      rgba(83, 77, 144, 1) 100%
+    )
+    no-repeat right bottom / 0 var(--bg-h);
+  transition: background-size 350ms;
+  --bg-h: 100%;
+  padding-bottom: 2px;
+  --bg-h: 2px;
+}
+
+.fp-page a:where(:hover, :focus-visible) {
+  background-size: 100% var(--bg-h);
+  background-position-x: left;
+}
+
+.fpm-box {
+  display: flex;
+  flex-direction: column;
 }
 
 .fp-mail {
-    text-align: left;
-    width: 40%;
-    margin-right: 4%;
+  text-align: left;
+  width: 35%;
+  margin-right: 4%;
 }
 
-.fp-mail>a>h1 {
-    color: var(--darkBlue-color);
-    font-family: 'Josefin Sans';
-}
-.fpm-mailbox {
-    display: flex;
-    width: 100%;
+.fp-mail > a > h1 {
+  color: var(--darkBlue-color);
+  font-family: "Josefin Sans";
 }
 
-.fpm-mailbox>input {
-    width: 60%;
-    padding: 3%;
-    color: #8A8FB9;
-    outline: none;
-    border: none;
-    border-radius: 10px;
+.fpm-box > p,
+.fpm-box > p > a {
+  color: #8a8fb9!important;
+  font-size: 15px;
 }
-
-.fpm-mailbox>button {
-    width: 30%;
-    padding: 3% 0;
-    outline: none;
-    border: none;
-    border-radius: 10px;
-    background-color: #FB2E86;
-    cursor: pointer;
-}
-
-.fpm-box>p {
-    color: #8A8FB9;
-    font-size: 14px;
-}
-
-@media screen and (max-width: 860px) {
-    
-    .fpm-mailbox {
-        flex-direction: column;
-    }
-    .fpm-mailbox>input {
-        width: 90%;
-        margin-bottom: 5%;
-    }
-    .fpm-mailbox>button {
-        width: 40%;
-    }
-}
-
-@media screen and (max-width: 770px) {
-    .f-pages {
-        width: 80%;
-        flex-direction: column;
-    }
-    .fp-mail {
-        width: 100%;
-        margin-bottom: 5%;
-    }
-    .fpm-box {
-        flex-direction: row;
-        width: 100%;
-    }
-    .fpm-box >p {
-        width: 40%;
-        margin: 0;
-    }
-    .fpm-mailbox {
-        width: 45%;
-        margin-right: 10%;
-    }
-    .fpm-mailbox>input {
-        padding: 5%;
-        width: 100%;
-    }
-    .fpm-mailbox>button {
-        width: 50%;
-        padding: 4% 0;
-    }
-    .fp-categories {
-        width: 100%!important;
-    }
-}
-
-@media screen and (max-width: 610px) {
-    .fp-categories {
-        width: 100%;
-    }
-    .fp-page {
-        flex: 1 1 150px;
-    }
-    .categories {
-        margin-right: 8%!important;
-    }
-    .customerCare {
-        margin: 0!important;
-    }
-    .fpm-box >p {
-        font-size: 12px;
-    }
-}
-
 
 .categories {
-    width: 35%;
-    margin-right: 4%;
+  width: 35%;
+  margin-right: 4%;
 }
 
-.allPages {
-    width: 30%;
+.information {
+  width: 30%;
 }
 
 .customerCare {
-    width: 30%;
-    margin-right: 3%;
+  width: 30%;
+  margin-right: 3%;
 }
 
-.fp-page>p{
-    color: var(--darkBlue-color);
-    text-align: left;
-    font-size: 16px;
-    font-family: 'Josefin Sans';
-    font-weight: 600;
+.fp-page > p {
+  color: var(--darkBlue-color);
+  text-align: left;
+  font-size: 16px;
+  font-family: "Josefin Sans";
+  font-weight: 600;
 }
 
-.fp-page>ul {
-    text-align: left;
-    padding: 0;
+.fp-page > ul {
+  text-align: left;
+  padding: 0;
 }
 
-.fp-page>ul>ol {
-    color: #8A8FB9;
-    padding: 0;
-    font-size: 14px;
-    line-height: 32px;
-    font-family: 'Jost';
+.fp-page > ul > ol {
+  color: #8a8fb9;
+  padding: 0;
+  font-size: 14px;
+  line-height: 32px;
+  font-family: "Jost";
 }
-
+/* COPY */
 .f-copy {
-    display: flex;
-    width: 60%;
-    padding: 0 20%;
-    justify-content: space-between;
-    margin: 0 auto;
-    background-color: #E7E4F8;
-    align-items: center;
+  display: flex;
+  width: 100%;
+  padding: 1.5% 0%;
+  justify-content: space-between;
+  margin: 0 auto;
+  background-color: #e7e4f8;
+  align-items: center;
+  text-align: center;
+}
+.companyName {
+  width: 30%;
+  text-align: right;
+}
+.legacy {
+  width: 35%;
+}
+.legacy ul{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+.legacy ul ol {
+  padding: 0 7% 0 0;
+}
+.legacy ul ol a{
+  font-size: 12px;
+  color: gray;
 }
 
-.f-copy>p {
+.f-copy > p {
+  font-size: 12px;
+  color: gray;
+  margin: 0;
+}
+.fc-medias {
+  width: 25%;
+}
+
+.fc-medias > ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.fc-medias > ul > ol {
+  padding: 0 15% 0 0;
+}
+.fc-medias > ul > ol > a {
+  color: var(--darkBlue-color);
+}
+
+
+@media screen and (max-width: 770px) {
+  .f-pages {
+    width: 80%;
+    flex-direction: column;
+  }
+  .fp-mail {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+  .fpm-box {
+    flex-direction: row;
+    width: 100%;
+  }
+  .fpm-box > p {
+    width: 40%;
+    margin: 0;
+  }
+  .fp-categories {
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .fp-categories {
+    width: 100%;
+  }
+  .fp-page {
+    flex: 1 1 150px;
+  }
+  .categories {
+    margin-right: 8% !important;
+  }
+  .customerCare {
+    margin: 0 !important;
+  }
+  .fpm-box > p {
     font-size: 12px;
-    color: gray;
-}
-
-.fc-medias>ul {
-    display: flex;
-}
-
-.fc-medias>ul>ol>a {
-    color: var(--darkBlue-color);
+  }
+  .f-copy {
+    flex-direction: column;
+  }
+  .companyName {
+    width: 100%;
+    text-align: center;
+  }
+  .legacy {
+    width: 80%;
+    margin: 2% 0;
+  }
+  .legacy ul{
+    justify-content: center;
+  }
+  .fc-medias {
+    width: 50%;
+  }
 }

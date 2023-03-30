@@ -1,5 +1,6 @@
 .BlogView {
     width: 100%;
+    margin-top: 5%;
     display: flex;
     flex-direction: column;
 }
@@ -34,7 +35,7 @@
     align-items: center;
 }
 
-.b-author {
+.bad-author {
     width: 80%;
     background-color: var(--light-pink);
     color: var(--darkBlue-color);
@@ -42,11 +43,12 @@
     padding: 1% 10%;
 }
 
-span.b-date {
-    width: 80%;
+span.bad-date {
+    width: 100%;
     background-color: var(--light-yellow);
     color: var(--darkBlue-color);
     padding: 1% 10%;
+    font-size: 14px;
 }
 
 .icon {
@@ -88,7 +90,7 @@ span.b-date {
 }
 
 .blog-content>a {
-    width: 15%;
+    width: 30%;
 }
 
 .blog-content>a>button {

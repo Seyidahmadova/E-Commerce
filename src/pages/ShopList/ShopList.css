@@ -1,0 +1,91 @@
+.ShopList {
+  width: 100%;
+}
+.list-about {
+  width: 80%;
+  margin: 5% auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.la-title {
+  width: 45%;
+  text-align: left;
+}
+
+.la-title > h1 {
+  color: var(--darkBlue-color);
+  margin: 0;
+}
+.la-title > p {
+  color: var(--grayViolet);
+}
+
+/* views */
+.list-filter {
+  display: flex;
+  width: 30%;
+  justify-content: space-around;
+}
+.views {
+  display: flex;
+  width: 20%;
+  justify-content: space-between;
+}
+
+.views > p {
+  cursor: pointer;
+  color: var(--yellow-color);
+}
+
+/* FILTER */
+.select-button {
+  width: 55%;
+  outline: none;
+}
+
+.select-button,
+.select-button:active {
+  background-color: transparent !important;
+  color: var(--darkBlue-color) !important;
+  border: 1px solid var(--darkBlue-color) !important;
+  border-radius: 5px;
+  padding-left: 5px;
+  font-size: 15px;
+}
+
+select>option:hover {
+  background-color: yellow;
+}
+
+/* all shop list */
+.allShopList {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  margin: 5% auto 10% auto;
+}
+
+/* SHOP SIDEBAR */
+.shopSideBarPart {
+  width: 30%;
+}
+
+.menuSideBar {
+  width: 5%;
+  margin-right: 5%;
+}
+
+/* LIST OF PRODUCTS */
+.listProducts {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+.gridProducts {
+  display: flex;
+  flex-wrap: wrap;
+  height: min-content;
+}

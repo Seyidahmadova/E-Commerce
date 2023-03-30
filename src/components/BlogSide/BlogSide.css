@@ -58,6 +58,7 @@
     flex: 1 1 140px;
     cursor: pointer;
     flex-grow: 0;
+    color: var(--darkBlue-color);
     border-radius: 10px;
 }
 

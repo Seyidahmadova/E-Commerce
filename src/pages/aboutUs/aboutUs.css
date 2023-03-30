@@ -28,6 +28,7 @@
 
 .auc-subcontent > h1 {
   color: var(--darkBlue-color);
+  font-size: 30px;
 }
 
 .auc-subcontent > p {
@@ -38,7 +39,6 @@
 
 .auc-subcontent > a {
   width: 30%;
-  /* margin-top: 10%; */
 }
 
 .auc-subcontent > a > button {
@@ -64,4 +64,44 @@
 .ourFeatures > h1 {
   color: var(--darkBlue-color);
   margin-bottom: 10%;
+}
+
+
+/* MEDIA QUERY */
+@media screen and (max-width:1000px) {
+  .au-content {
+    width: 80%;
+  }
+  .auc-img {
+    width: 40%;
+  }
+  .auc-subcontent {
+    width: 55%;
+  }
+  .auc-subcontent > a {
+    width: 25%;
+  }
+  .auc-subcontent > a > button {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width:1000px) {
+  .auc-subcontent > h1 {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width:730px) {
+  .au-content {
+    flex-direction: column;
+    width: 70%;
+  }
+  .auc-img {
+    width: 100%;
+  }
+  .auc-subcontent {
+    width: 100%;
+    margin-top: 10%;
+  }
 }

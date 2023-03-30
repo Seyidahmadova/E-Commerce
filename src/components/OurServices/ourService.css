@@ -1,59 +1,61 @@
 .ourService {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 0% auto 5% auto;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0% auto 5% auto;
 }
 
 .os-offer {
-    display: flex;
-    flex-direction: column;
-    flex: 1 1 110px;
-    text-align: center;
-    border-radius: 5px;
-    padding: 2%;
-    margin-right: 3%;
-    box-shadow: 0 1px 5px var(--dark-violet);
+  flex: 1 1 110px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 5px;
+  padding: 2%;
+  margin-right: 3%;
+  box-shadow: 0 1px 5px var(--dark-violet);
 }
 
 .os-offer-img {
-    width: 100%;
+  width: 100%;
 }
 
-.os-offer>img {
-    width: 100%;
-    object-fit: cover;
+.os-offer > img {
+  width: 100%;
+  object-fit: cover;
 }
 
 .os-offer-title {
-    color: var(--darkBlue-color);
-    font-size: 18px;
-    font-weight: 500; 
-    font-family: 'Josefin Sans';
+  color: var(--darkBlue-color);
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Josefin Sans";
 }
 
 .os-offer-text {
-    font-size: 15px;
-    font-family: 'Jost';
-    width: 100%;
-    color: var(--gray-color);
+  font-size: 15px;
+  font-family: "Jost";
+  width: 100%;
+  color: var(--gray-color);
 }
 @media screen and (max-width: 940px) {
-    .os-offer {
-        margin: 0 5% 6% 0;
-        padding: 4% 2%;
-        flex: 1 1 160px;
-    }
+  .os-offer {
+    margin: 0 5% 6% 0;
+    padding: 4% 2%;
+    flex: 1 1 184px;
+  }
 }
 
 @media screen and (max-width: 610px) {
-    .ourService {
-        width: 60%;
-    }
-    .os-offer {
-        flex: 1 1 200px;
-        margin: 0% auto 10% auto;
-        padding: 4% 2%;
-    }
+  .ourService {
+    width: 60%;
+  }
+  .os-offer {
+    flex: 1 1 200px;
+    margin: 0% auto 10% auto;
+    flex-grow: 1;
+    padding: 4% 2%;
+  }
 }

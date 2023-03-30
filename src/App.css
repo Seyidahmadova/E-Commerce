@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500;600;700&display=swap');
 
+/* Manat - &#8380; */
+
+* {
+  scroll-behavior: smooth;
+}
 
 html, body {
   width: 100%;
@@ -13,7 +18,8 @@ html, body {
   --pink-color: #FB2E86;
   --pinkViolet: #F5E1FC;
   --light-pink: #FFE7F9;
-  --gray-color: #B7BACB;
+  --gray-color: #868686;
+  /* --gray-color: #B7BACB; */
   --grayBlue: #F5F6F8;
   --light-blue: #bde0ff;
   --dark-violet: #E7E4F8;
@@ -22,9 +28,11 @@ html, body {
   --grayViolet: #8A8FB9;
   --yellow-color:#FFA454;
   --light-yellow: #FFECE2;
+  --orange-color: #fc9d21;
+  --btn-color: #2F333A;
 }
 
-a {
+.App a {
   text-decoration: none;
 }
 

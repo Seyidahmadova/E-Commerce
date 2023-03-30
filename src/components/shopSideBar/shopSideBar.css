@@ -1,0 +1,148 @@
+.shopSideBar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.ssb-part {
+    text-align: left;
+    margin-bottom: 20%;
+}
+
+.ssb-title {
+    font-family: 'Josefin Sans';
+    font-size: 22px;
+    color: #151875;
+}
+
+.form-check {
+    text-align: left;
+    color: var(--grayViolet);
+    margin: 3% 0;
+}
+
+.form-check label {
+    font-size: 15px;
+    font-family: 'Jost';
+}
+
+.productBrandsPart .form-check-input[type=checkbox]{
+    background-color: #E5E0FC;
+    border-color: #E5E0FC;
+}
+
+.productBrandsPart .form-check-input[type=checkbox]:checked{
+    background-color: #603EFF;
+    border-color: #603EFF;
+}
+
+.discountOfferPart .form-check-input[type=checkbox]{
+    background-color: #ffd3d3;
+    border-color: #ffd3d3;
+}
+
+.discountOfferPart .form-check-input[type=checkbox]:checked{
+    background-color: #fa3131;
+    border-color: #fa3131;
+}
+
+.categories .form-check-input[type=checkbox]{
+    background-color: #f4e8fe;
+    border-color: #f4e8fe;
+}
+
+.categories .form-check-input[type=checkbox]:checked{
+    background-color: #8A2BE2;
+    border-color: #8A2BE2;
+}
+
+.priceFilterPart .form-check-input[type=checkbox]{
+    background-color: #FFDBF1;
+    border-color: var(--pink-color);
+}
+
+.priceFilterPart .form-check-input[type=checkbox]:checked{
+    background-color: var(--pink-color);
+    border-color: var(--pink-color);
+}
+
+.ratingItem .form-check-input[type=checkbox]{
+    background-color: #FFF6DA;
+    border-color: #FFF6DA;
+}
+
+.ratingItem .form-check-input[type=checkbox]:checked{
+    background-color: #FFCC2E;
+    border-color: #FFCC2E;
+}
+
+/* bytger */
+/* Position and sizing of burger button */
+.menuSideBar .bm-burger-button {
+    position: relative;
+    width: 30px;
+    height: 24px;
+  }
+  
+  /* Color/shape of burger icon bars */
+  .menuSideBar .bm-burger-bars {
+    background: var(--grayViolet);
+  }
+  
+  /* Color/shape of burger icon bars on hover*/
+  /* .bm-burger-bars-hover {
+    background: var(--orange-color);
+  } */
+  .menuSideBar .bm-burger-bars:hover {
+    background: var(--orange-color);  
+  }
+  
+  /* Position and sizing of clickable cross button */
+  .menuSideBar .bm-cross-button {
+    height: 0;
+    width: 0;
+  }
+  
+  /* Color/shape of close button cross */
+  .menuSideBar .bm-cross {
+    /* background: #bdc3c7; */
+    display: none;
+  }
+  
+  /*
+  Sidebar wrapper styles
+  Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+  */
+  .menuSideBar .bm-menu-wrap {
+    position: relative!important;
+    height: 100%;
+    border-radius: 10px;
+}
+
+/* General sidebar styles */
+.menuSideBar .bm-menu {
+      background-color: white!important;
+    padding: 2.5em 1.5em 0;
+    font-size: 1.15em;
+  }
+  
+  /* Morph shape necessary with bubble or elastic */
+  .menuSideBar .bm-morph-shape {
+    fill: #373a47;
+  }
+  
+  /* Wrapper for item list */
+  .menuSideBar .bm-item-list {
+    color: #b8b7ad;
+    padding: 0.8em;
+  }
+  
+  /* Individual item */
+  .menuSideBar .bm-item {
+    display: inline-block;
+  }
+  
+  /* Styling of overlay */
+  .menuSideBar .bm-overlay {
+    background: rgba(0, 0, 0, 0.0)!important;
+  }
