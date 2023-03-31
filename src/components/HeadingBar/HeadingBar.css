@@ -87,7 +87,17 @@
   
 }
 
+.headerdroplistLang a,
+.headerdroplistCur a {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 400;
+}
 
+.headerdroplistLang a:first-child,
+.headerdroplistCur a:first-child {
+  color: black;
+}
 
 .header-icon {
   color: white;
@@ -125,4 +135,5 @@
 
 .dropdown-menu.show {
   z-index: 20002 !important;
+  background-color: var(--light-violet);
 }
