@@ -21,16 +21,18 @@
     flex-direction: column;
 }
 
-.blog-autDate {
+.bv-autDate {
     width: 70%;
+    margin: 3% 0;
     display: flex;
     align-items: center;
     text-align: left;
     justify-content: space-between;
 }
 
-.blog-autDate>p {
+.bv-autDate>p {
     width: 45%;
+    margin: 0;
     display: flex;
     align-items: center;
 }
@@ -102,3 +104,12 @@ span.bad-date {
     text-align: left;
     cursor: pointer;
 }
+
+@media (max-width: 737.5px) {
+    .BlogView {
+      margin-bottom: 10%;
+    }
+    .bv-autDate {
+        width: 100%;
+    }
+  }

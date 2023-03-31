@@ -11,7 +11,7 @@ export default function BlogView() {
           <img alt="blog" src={blogImg}></img>
         </div>
         <div className="blogInfo">
-          <div className="blog-autDate">
+          <div className="bv-autDate">
             <p><ImPen className="icon pen" /><span className="bad-author">              
               Ali Ahmedov </span>
             </p>

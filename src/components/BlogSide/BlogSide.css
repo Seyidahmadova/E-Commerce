@@ -1,122 +1,153 @@
 .BlogSide {
-    text-align: left;
+  text-align: left;
+  width: 100%;
 }
 
 .BlogSide h1 {
-    color: var(--darkBlue-color);
-    font-size: 25px;
-    margin-bottom: 10%;
+  color: var(--darkBlue-color);
+  font-size: 25px;
+  margin-bottom: 10%;
 }
 
 /* SEARCH */
 .searchArea {
-    width: 100%;
-    margin-bottom: 5%;
+  width: 100%;
+  margin-bottom: 5%;
 }
 
 .searchInput {
-    border: 1px solid var(--gray-color);
-    border-radius: 5px;
+  border: 1px solid var(--gray-color);
+  border-radius: 5px;
 }
 
-.searchInput>input {
-    width: 90%;
-    outline: none;
-    border: none;
-    background-color: transparent;
-    font-family: 'Jost';
-    font-size: 15px;
-    padding: 2% 0 2% 3%;
+.searchInput > input {
+  width: 90%;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  font-family: "Jost";
+  font-size: 15px;
+  padding: 2% 0 2% 3%;
 }
 
-.searchInput>button {
-    width: 10%;
-    padding: 2.5% 0;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
+.searchInput > button {
+  width: 10%;
+  padding: 2.5% 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 /* CATEGORIES */
 .blogCategories {
-    width: 100%;
-    margin: 6% 0;
-    display: flex;
-    flex-direction: column;
+  width: 100%;
+  margin: 6% 0;
+  display: flex;
+  flex-direction: column;
 }
-.cList { 
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.cList {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .category {
-    display: flex;
-    padding: 3% 0% 3% 4%;
-    margin: 2% 0;
-    flex: 1 1 140px;
-    cursor: pointer;
-    flex-grow: 0;
-    color: var(--darkBlue-color);
-    border-radius: 10px;
+  display: flex;
+  padding: 3% 0% 3% 4%;
+  margin: 2% 0;
+  flex: 1 1 140px;
+  cursor: pointer;
+  flex-grow: 0;
+  color: var(--darkBlue-color);
+  border-radius: 10px;
 }
 
 .selectedC {
-    background-color: var(--pink-color);
-    color: white;
+  background-color: var(--pink-color);
+  color: white;
 }
 
 .nonSelectedC {
-    background-color: transparent;
-    color: var(--darkBlue-color);
+  background-color: transparent;
+  color: var(--darkBlue-color);
 }
 
 /* RECENT BLOG */
 .recentPosts {
-    width: 100%;
-    margin: 5% 0;
-    display: flex;
-    flex-direction: column;
+  width: 100%;
+  margin: 5% 0;
+  display: flex;
+  flex-direction: column;
 }
 
 /* SALE PRODUCTS */
 .saleProducts {
-    width: 100%;
-    margin: 5% 0;
+  width: 100%;
+  margin: 5% 0;
 }
 
 /* FOLLOW US */
 .b-smedias {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
-.b-smedias>ul {
-    width: 40%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0;
+.b-smedias > ul {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
 }
 
-.b-smedias>ul>ol {
-    border-radius: 50%;
-    padding: 5% 7%;
+.b-smedias > ul > ol {
+  border-radius: 50%;
+  padding: 5% 7%;
 }
 
-.flogo,.ilogo,.tlogo {
-    color: white;
+.flogo,
+.ilogo,
+.tlogo {
+  color: white;
 }
 
 .facebook {
-    background-color: #5625DF; 
+  background-color: #5625df;
 }
 
 .instagram {
-    background-color: #FF27B7;
+  background-color: #ff27b7;
 }
 .twitter {
-    background-color: #37DAF3;
+  background-color: #37daf3;
+}
+
+@media (max-width: 737.5px) {
+  .blogCategories,
+  .recentPosts,
+  .saleProducts,
+  .b-smedias {
+    margin: 10% 0;
+  }
+
+  .BlogSide h1 {
+    margin-bottom: 4%;
+  }
+
+  .cList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+
+  .eachPost,
+  .eachProduct {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 }

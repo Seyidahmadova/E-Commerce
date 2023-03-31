@@ -120,7 +120,7 @@
   background: #373a47;
   padding: 2.5em 1.5em 0;
   font-size: 1.15em;
-  width: 450px;
+  width: 50%;
 }
 
 /* Morph shape necessary with bubble or elastic */
@@ -143,7 +143,7 @@
 .burgerNav .bm-overlay {
   background: rgba(0, 0, 0, 0.5) !important;
   width: 100% !important;
-  margin-top: 3%;
+  margin-top: 3.5%;
 }
 
 /* Individual item */
