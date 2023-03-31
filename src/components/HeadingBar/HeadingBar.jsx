@@ -50,7 +50,7 @@ export default function HeadingBar() {
           <NavDropdown
             title="English"
             id="collasible-nav-dropdown"
-            className="headerdroplist1"
+            className="headerdroplistLang"
           >
             <NavDropdown.Item href="/en" className="headerdroplistitem1">
               English
@@ -63,7 +63,7 @@ export default function HeadingBar() {
           <NavDropdown
             title="USD"
             id="collasible-nav-dropdown"
-            className="headerdroplist1"
+            className="headerdroplistCur"
           >
             <NavDropdown.Item href="/USD" className="headerdroplistitem1">
               USD

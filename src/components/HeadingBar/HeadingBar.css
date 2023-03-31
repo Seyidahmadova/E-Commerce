@@ -75,20 +75,26 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
-  color: #f1f1f1;
 }
 
-.headerdroplistitem1 {
+.headerdroplistitem1 a{
   display: flex;
   flex-direction: row;
   align-items: center;
-  font-family: "Josefin Sans";
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 16px;
   width: 30px;
+  
 }
+
+.headerdroplistLang a,
+.headerdroplistCur a {
+  color: #f1f1f1;
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 400;
+}
+
 
 .header-icon {
   color: white;
@@ -122,4 +128,8 @@
     font-size: 12px;
     line-height: 14px;
   }
+}
+
+.dropdown-menu.show {
+  z-index: 20002 !important;
 }

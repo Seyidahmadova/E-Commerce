@@ -8,37 +8,43 @@ export default function NavbarPart() {
   return (
     <div className="NavbarPart">
       <div className="navPages">
+        <Nav.Link href="/">Home</Nav.Link>
+
         <NavDropdown
-          title="Home"
+          href="/pages"
           id="navbarScrollingDropdown"
-          className="homedrop"
+          className="pagedrop"
+          title="Collections"
         >
           <NavDropdown.Item className="dropdown-item1" href="#action/3.1">
-            Action
+            Bedroom
           </NavDropdown.Item>
           <NavDropdown.Item className="dropdown-item1" href="#action/3.2">
-            Another action
+            Dining room
           </NavDropdown.Item>
           <NavDropdown.Item className="dropdown-item1" href="#action/3.3">
-            Something
+            Kitchen
+          </NavDropdown.Item>
+          <NavDropdown.Item className="dropdown-item1" href="#action/3.3">
+            Bathroom
+          </NavDropdown.Item>
+          <NavDropdown.Item className="dropdown-item1" href="#action/3.3">
+            Sofas
           </NavDropdown.Item>
         </NavDropdown>
-
-        <Nav.Link href="/pages">Pages</Nav.Link>
-        <Nav.Link href="/products">Products</Nav.Link>
+        {/* <Nav.Link href="/products">Products</Nav.Link> */}
         <Nav.Link href="/blogs">Blog</Nav.Link>
         <Nav.Link href="/shop">Shop</Nav.Link>
       </div>
-        <div className="nSearcArea">
-          <Form.Control
-            type="search"
-            placeholder="Search"
-            className="me-2"
-            aria-label="Search"
-          />
-          <Button variant="outline-success">Search</Button>
-        </div>
-
+      <div className="nSearcArea">
+        <Form.Control
+          type="search"
+          placeholder="Search"
+          className="me-2"
+          aria-label="Search"
+        />
+        <Button variant="outline-success">Search</Button>
+      </div>
     </div>
   );
 }
