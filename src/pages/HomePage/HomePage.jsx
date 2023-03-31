@@ -28,7 +28,7 @@ export default function HomePage() {
   return (
     <div className="home">
       <div className="hSlider">
-        <OwlCarousel items={1} loop autoplay="3000">
+        <OwlCarousel items={1} loop autoplay="5000" autoplaySpeed="2000" >
           <NewTrendSlide
             img={newTrend}
             fTitle={fTitle}
@@ -57,7 +57,7 @@ export default function HomePage() {
       </div>
       <div className="allBestSeller">
         <h1>Best Sellers</h1>
-        <OwlCarousel className="owlCarousel" items={4} loop autoplay="3000">
+        <OwlCarousel className="owlCarousel" items={4} loop autoplay="5000" autoplaySpeed="2000" >
           <BestSeller
             img={bestSeller}
             title="Comfort Handy Craft"
@@ -137,7 +137,7 @@ export default function HomePage() {
       </div>
       <div className="homeNewArrivals">
         <h1>New Arrivals</h1>
-        <OwlCarousel items={4} loop autoplay="3000">
+        <OwlCarousel items={4} loop autoplay="5000" autoplaySpeed="2000" >
           <NewArrival
             img={newArrival}
             title="Comfort Handy Craft"

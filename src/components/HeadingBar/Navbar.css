@@ -2,17 +2,39 @@
   margin-top: 0px !important;
 }
 
-.homedrop,
+.pagedrop,
+.navPages .nav-link,
 .dropdown-item1 {
   /* color: #b8b7ad !important ; */
   font-family: "Josefin Sans" !important;
   font-style: normal;
   font-weight: 400 !important;
-  font-size: 14px !important;
-  line-height: 16px !important;
+  font-size: 17px !important;
+  line-height: 30px !important;
 }
 
-.dropdown-toggle{
+.navPages .nav-link {
+  background: rgb(209, 143, 255);
+  background: linear-gradient(
+      90deg,
+      rgba(209, 143, 255, 1) 0%,
+      rgba(255, 127, 248, 1) 31%,
+      rgba(248, 140, 249, 1) 70%,
+      rgba(209, 143, 255, 1) 100%
+    )
+    no-repeat right bottom / 0 var(--bg-h);
+  transition: background-size 350ms;
+  --bg-h: 100%;
+  padding-bottom: 2px;
+  --bg-h: 2px;
+}
+
+.navPages .nav-link:where(:hover, :focus-visible) {
+  background-size: 100% var(--bg-h);
+  background-position-x: left;
+}
+
+.dropdown-toggle {
   margin-top: 3%;
 }
 
@@ -25,6 +47,10 @@
   border: none;
 }
 
+.nSearcArea {
+  display: flex;
+  align-items: center;
+}
 
 .brand {
   font-family: "Josefin Sans";
@@ -36,9 +62,9 @@
   margin-left: 3%;
 }
 
-.navbar-brand{
+.navbar-brand {
   margin-left: 8%;
-    margin-top: 1%;
+  margin-top: 1%;
 }
 
 .navcollapse {
@@ -78,7 +104,7 @@
 
 /* Color/shape of burger icon bars */
 .burgerNav .bm-burger-bars {
-  background: #373a47;
+  background: var(--btn-color);
 }
 
 /* Color/shape of burger icon bars on hover*/
@@ -90,6 +116,7 @@
 .burgerNav .bm-cross-button {
   height: 24px;
   width: 24px;
+  display: none;
 }
 
 /* Color/shape of close button cross */
@@ -104,6 +131,7 @@
 .burgerNav .bm-menu-wrap {
   position: fixed !important;
   height: 100%;
+  width: 100% !important;
   margin-bottom: 2%;
 }
 
@@ -112,6 +140,7 @@
   background: #373a47;
   padding: 2.5em 1.5em 0;
   font-size: 1.15em;
+  width: 50%;
 }
 
 /* Morph shape necessary with bubble or elastic */
@@ -132,8 +161,9 @@
 
 /* Styling of overlay */
 .burgerNav .bm-overlay {
-  background: rgba(0, 0, 0, 0) !important;
-  width: 0% !important;
+  background: rgba(0, 0, 0, 0.5) !important;
+  width: 100% !important;
+  margin-top: 3.5%;
 }
 
 /* Individual item */
@@ -160,7 +190,7 @@
 .extendNav .brand {
   width: 8%;
 }
-.extendNav .NavbarPart{
+.extendNav .NavbarPart {
   display: flex;
   width: 90%;
   padding: 1% 3%;
@@ -173,19 +203,20 @@
   width: 50%;
   justify-content: space-around;
 }
+
 .extendNav .nSearcArea {
   display: flex;
   width: 30%;
 }
 
-@media (max-width:989.5px){
-  .navPages{
+@media (max-width: 989.5px) {
+  .navPages {
     gap: 10px;
     display: flex;
     flex-direction: column;
   }
 
-  .form-control{
+  .form-control {
     margin-top: 10px;
     margin-bottom: 10px;
   }
@@ -198,8 +229,8 @@
     background-color: inherit !important;
     border: none;
   }
-  
-  .dropdown-item1{
+
+  .dropdown-item1 {
     color: #b8b7ad !important ;
   }
 }

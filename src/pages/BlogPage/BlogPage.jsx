@@ -5,7 +5,6 @@ import BlogView from "./BlogView";
 import BlogSide from "../../components/BlogSide/BlogSide";
 
 export default function BlogPage() {
-
   return (
     <div className="BlogPage">
       <PagePath title="Blogs" curPage="Blogs" path="/blogs" />
@@ -16,7 +15,7 @@ export default function BlogPage() {
           <BlogView />
         </div>
         <div className="blog-additional">
-            <BlogSide/>
+          <BlogSide />
         </div>
       </div>
       <Brands />

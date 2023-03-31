@@ -41,19 +41,19 @@ export default function Footer() {
             <p>CATEGORIES</p>
             <ul>
               <ol>
-                <Link to="/shop" >Laptops & Computers</Link>
+                <Link to="/shop" >Bedroom</Link>
               </ol>
               <ol>
-                <Link to="/shop">Cameras & Photography</Link>
+                <Link to="/shop">Kitchen</Link>
               </ol>
               <ol>
-                <Link to="/shop">Smart Phones & Tablets</Link>
+                <Link to="/shop">Dining room</Link>
               </ol>
               <ol>
-                <Link to="/shop">Video Games & Consoles</Link>
+                <Link to="/shop">Sofas</Link>
               </ol>
               <ol>
-                <Link to="/shop">Waterproof Headphones</Link>
+                <Link to="/shop">Tables</Link>
               </ol>
             </ul>
           </div>
