@@ -10,6 +10,22 @@ import { useState, useEffect, useRef } from "react";
 import "./HeadingBar.css";
 
 export default function HeadingBar() {
+
+  const [fixed,setFixed] = useState(true);
+  
+  const handleBody= ()=> {
+    if(screenSize.dynamicWidth < 990){
+    setFixed(!fixed);
+    if(!fixed){
+      document.body.style.overflow ="hidden"
+    }
+    else {
+      document.body.style.overflow ="auto"
+
+    }
+  }
+  }
+
   const refContainer = useRef(null);
   // get width of window
   const [screenSize, getDimension] = useState({
@@ -24,12 +40,14 @@ export default function HeadingBar() {
   };
 
   useEffect(() => {
+    
     window.addEventListener("resize", setDimension);
 
     return () => {
       window.removeEventListener("resize", setDimension);
     };
   }, [screenSize]);
+
   return (
     <div className="HeadNav">
     <Navbar className="HeadingBar">
@@ -76,12 +94,11 @@ export default function HeadingBar() {
       </div>
     </Navbar>
     <div className="nPartBrand">
-    {/* <Navbar.Brand href="#" className="brand">
-        Hekto
-      </Navbar.Brand>  */}
+
     {screenSize.dynamicWidth < 990 ? 
     <div className="burgerNav">
       <Menu
+        onStateChange={handleBody}
         pageWrapId={"page-wrap"}
         outerContainerId={"outer-container"}
         className="menubar"

@@ -3,13 +3,14 @@
 }
 
 .homedrop,
+ .navPages .nav-link,
 .dropdown-item1 {
   /* color: #b8b7ad !important ; */
   font-family: "Josefin Sans" !important;
   font-style: normal;
   font-weight: 400 !important;
-  font-size: 14px !important;
-  line-height: 16px !important;
+  font-size: 17px !important;
+  line-height: 30px !important;
 }
 
 .dropdown-toggle{
@@ -23,6 +24,11 @@
   transform: translate3d(2px, 2px, 0px) !important;
   background-color: inherit;
   border: none;
+}
+
+.nSearcArea {
+  display: flex;
+  align-items: center;
 }
 
 
@@ -78,7 +84,7 @@
 
 /* Color/shape of burger icon bars */
 .burgerNav .bm-burger-bars {
-  background: #373a47;
+  background: var(--btn-color);
 }
 
 /* Color/shape of burger icon bars on hover*/
@@ -90,6 +96,7 @@
 .burgerNav .bm-cross-button {
   height: 24px;
   width: 24px;
+  display: none;
 }
 
 /* Color/shape of close button cross */
@@ -104,6 +111,7 @@
 .burgerNav .bm-menu-wrap {
   position: fixed !important;
   height: 100%;
+  width: 100% !important;
   margin-bottom: 2%;
 }
 
@@ -112,6 +120,7 @@
   background: #373a47;
   padding: 2.5em 1.5em 0;
   font-size: 1.15em;
+  width: 450px;
 }
 
 /* Morph shape necessary with bubble or elastic */
@@ -132,8 +141,9 @@
 
 /* Styling of overlay */
 .burgerNav .bm-overlay {
-  background: rgba(0, 0, 0, 0) !important;
-  width: 0% !important;
+  background: rgba(0, 0, 0, 0.5) !important;
+  width: 100% !important;
+  margin-top: 3%;
 }
 
 /* Individual item */
@@ -173,6 +183,7 @@
   width: 50%;
   justify-content: space-around;
 }
+
 .extendNav .nSearcArea {
   display: flex;
   width: 30%;

@@ -24,10 +24,10 @@ export default function NavbarPart() {
           </NavDropdown.Item>
         </NavDropdown>
 
-        <Nav.Link href="#pages">Pages</Nav.Link>
-        <Nav.Link href="#products">Products</Nav.Link>
-        <Nav.Link href="#blog">Blog</Nav.Link>
-        <Nav.Link href="#shop">Shop</Nav.Link>
+        <Nav.Link href="/pages">Pages</Nav.Link>
+        <Nav.Link href="/products">Products</Nav.Link>
+        <Nav.Link href="/blogs">Blog</Nav.Link>
+        <Nav.Link href="/shop">Shop</Nav.Link>
       </div>
         <div className="nSearcArea">
           <Form.Control
