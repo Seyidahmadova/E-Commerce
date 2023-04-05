@@ -76,11 +76,12 @@
   position: relative;
   width: 100%;
   z-index: 2001;
-  /* background-color: white; */
   padding: 1% 0 1% 0%;
+  margin-bottom: 4%;
   text-align: left;
   display: flex;
   align-items: center;
+  border-bottom: 1px solid var(--pinkViolet);
 }
 
 .burgerNav {

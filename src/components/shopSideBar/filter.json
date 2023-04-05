@@ -1,0 +1,5 @@
+{"brands": [ "Modern furniture", "Modern furniture 1", "Modern furniture" , "Modern furniture", "Modern furniture" ],
+"categories": ["Classic", "Modern", "Modern Style","Farmhouse Style","Industrial Style","Rustic Style","Mission Style"],
+"discounts": ["20% Cashback", "30% Cashback", "15% Cashback","40% Cashback"],
+"price": ["0-400", "401-1000", "1001-2500","2501-10000"]
+}

@@ -3,7 +3,7 @@
 }
 .list-about {
   width: 80%;
-  margin: 5% auto;
+  margin: 1% auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -22,12 +22,30 @@
   color: var(--grayViolet);
 }
 
-/* views */
 .list-filter {
   display: flex;
   width: 30%;
-  justify-content: space-around;
+  justify-content: space-between;
 }
+/* filter button */
+.filterButton {
+  width: 30%;
+  display: none;
+}
+.filterButton button{
+  width: 100%;
+  outline: none;
+  border: 1px solid var(--darkBlue-color);
+  background-color: white;
+  border-radius: 5px;
+  padding: 3% 0;
+  margin: 0 0 5% 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* views */
 .views {
   display: flex;
   width: 20%;
@@ -67,13 +85,57 @@ select>option:hover {
   margin: 5% auto 10% auto;
 }
 
+
 /* SHOP SIDEBAR */
 .shopSideBarPart {
-  width: 30%;
+  width: 25%;
 }
 
 .menuSideBar {
-  width: 5%;
+  position: absolute;
+  width: 0%;
+  min-height: 100vh;
+  margin: 0 0% 3% 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: flex-end;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.menuSideBar .shopSideBar {
+  width: 100%;
+  padding: 3% 0 0 10% ;
+  animation-name: showing;
+  animation-duration: 0.5s;
+}
+
+@keyframes showing {
+  0% {
+    left: 0;
+
+  }
+  100% {
+    left: 50%;
+  }
+}
+
+.filterMenu {
+  width: 50%;
+  overflow-y: scroll;
+  /* height: 275px; */
+  height: 43vw;
+}
+
+
+.close-menu {
+  width: 100%;
+  font-size: 25px;
+  text-align: right;
+  padding: 0 5% 0% 0;
+  background-color: white;
+}
+
+.filterIcon-shop {
   margin-right: 5%;
 }
 
@@ -85,7 +147,43 @@ select>option:hover {
 }
 
 .gridProducts {
+  width: 75%;
   display: flex;
   flex-wrap: wrap;
   height: min-content;
+  justify-content: space-around;
+}
+
+/* MEDIA SCREEN */
+@media screen and (max-width: 640px) {
+  .list-about {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .list-filter{
+    width: 80% !important;
+  }
+  .filterMenu {
+    height: 48vw;
+  }
+}
+@media screen and (max-width: 991px) {
+  .list-filter {
+    width: 47%;
+  }
+  .views {
+    width: 14%;
+  }
+  .select-button {
+    width: 45%;
+  }
+  .filterButton {
+    display: inline;
+  }
+  .gridProducts {
+    width: 100% !important;
+  }
+  .shopSideBar div {
+    margin-bottom: 5%;
+  }
 }

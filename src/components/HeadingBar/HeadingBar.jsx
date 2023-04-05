@@ -1,5 +1,6 @@
 import React from "react";
 import Nav from "react-bootstrap/Nav";
+import { Link } from "react-router-dom";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { RxPerson } from "react-icons/rx";
@@ -74,20 +75,21 @@ export default function HeadingBar() {
           </NavDropdown>
 
           <div className="headerdroplistitem">
-            <Nav.Link href="/login" className="headerdroplistitem"></Nav.Link>
-            <RxPerson className="header-icon" />
+            <Link to="/login" className="headerdroplistitem">
+              <RxPerson className="header-icon" />
+            </Link>
           </div>
 
           <div className="headerdroplistitem">
-            <Nav.Link
-              href="/wishlist"
-              className="headerdroplistitem"
-            ></Nav.Link>
-            <BsHeart className="header-icon" />
+            <Link to="/wishlist">
+              <BsHeart className="header-icon" />
+            </Link>
           </div>
 
           <div>
-            <BsCart2 className="cardicon" />
+            <Link to="/cart">
+              <BsCart2 className="cardicon" />
+            </Link>
           </div>
         </div>
       </Navbar>
