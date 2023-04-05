@@ -33,7 +33,7 @@
   align-items: center;
 }
 
-.innerheading {
+/* .innerheading {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -60,7 +60,7 @@
 .phonecol {
   display: flex;
   align-items: center;
-}
+} */
 
 .headerdroplist {
   display: flex;
