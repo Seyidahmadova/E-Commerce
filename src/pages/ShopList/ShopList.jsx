@@ -4,7 +4,6 @@ import PagePath from "../../components/PagePath/PagePath";
 import Brands from "../../components/Brands/Brands";
 import ShopSideBar from "../../components/shopSideBar/shopSideBar";
 import { HiViewGrid } from "react-icons/hi";
-import { slide as Menu } from "react-burger-menu";
 import { MdViewList, MdOutlineFilterList, MdClose } from "react-icons/md";
 
 import { useState, useEffect, useRef } from "react";
@@ -15,10 +14,10 @@ export default function ShopList() {
   const handleFilterShow = () => {
     setFilterShow(!filterShow);
     if(filterShow){
-      document.body.style.overflow="auto"
+      document.body.style.overflow="auto";
     }
     else {
-      document.body.style.overflow="hidden"
+      document.body.style.overflow="hidden";
     }
   };
  
@@ -97,9 +96,6 @@ export default function ShopList() {
                 <ShopSideBar ref={refContainer} />
               </div>
             ) : null}
-            {/* <Menu pageWrapId={"page-wrap"} className="shopListMenu">
-              <ShopSideBar ref={refContainer} />
-            </Menu> */}
           </div>
         ) : (
           <div className="shopSideBarPart">

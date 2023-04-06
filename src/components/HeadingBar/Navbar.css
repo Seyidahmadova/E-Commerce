@@ -73,7 +73,7 @@
 }
 
 .nPartBrand {
-  position: relative;
+  position: fixed;
   width: 100%;
   z-index: 2001;
   padding: 1% 0 1% 0%;
@@ -82,6 +82,7 @@
   display: flex;
   align-items: center;
   border-bottom: 1px solid var(--pinkViolet);
+  background-color: white;
 }
 
 .burgerNav {
@@ -194,10 +195,9 @@
 .extendNav .NavbarPart {
   display: flex;
   width: 90%;
-  padding: 1% 3%;
   align-items: center;
+  padding: 1% 3%;
   justify-content: space-between;
-  /* flex-direction: row; */
 }
 .extendNav .navPages {
   display: flex;
