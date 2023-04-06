@@ -1,22 +1,28 @@
 import "./CartPage.css";
 import { useState } from "react";
 import PagePath from "../../components/PagePath/PagePath";
-import cartImg from "../../images/cart/cartImg.jpg";
-import { TiDeleteOutline } from "react-icons/ti";
+import { useDispatch, useSelector } from "react-redux";
+import { useEffect } from "react";
+import Cart from "./cart";
 
 export default function CartPage() {
-  const [qty, setQty] = useState(1);
-  function counterMinus() {
-    if(qty===1){
-      setQty(1)
-    }
-    else{
-      setQty(qty - 1);
-    }
-  }
-  function counterPlus() {
-    setQty(qty + 1);
-  }
+  const addedProducts = useSelector((state) => state["products"]);
+  console.log("added", addedProducts);
+  const [subtotal, setSubtotal] = useState(0);
+  const [total, setTotal] = useState(0);
+  const handleTotal = (value) => {
+    setTotal(total + value);
+  };
+  useEffect(() => {
+    addedProducts !== undefined &&
+      !!addedProducts.length &&
+      addedProducts
+        .filter((i) => i >= 1)
+        .map((product) => {
+          handleTotal(product.Price);
+          console.log(product.Price);
+        });
+  });
 
   return (
     <div className="CartPage">
@@ -34,46 +40,23 @@ export default function CartPage() {
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td className="proImgCol">
-                <div className="proImg">
-                  <img alt="product" src={cartImg}></img>
-                </div>
-              </td>
-              <td className="proName">Twist Dining Table</td>
-              <td className="proPrice">288.0</td>
-              <td className="prQty">
-                <div className="qtyBox">
-                  <p className="qb-minus" onClick={counterMinus}>-</p>
-                  <p className="qb-value" value={qty}>{qty}</p>
-                  <p className="qb-plus" onClick={counterPlus}>+</p>
-                </div>
-              </td>
-              <td className="proSub">288.0</td>
-              <td className="proDel">
-                <TiDeleteOutline className="proDelIcon" />
-              </td>
-            </tr>
-            <tr>
-              <td className="proImgCol">
-                <div className="proImg">
-                  <img alt="product" src={cartImg}></img>
-                </div>
-              </td>
-              <td className="proName">Twist Dining Table</td>
-              <td className="proPrice">288.0</td>
-              <td className="prQty">
-                <div className="qtyBox">
-                  <p className="qb-minus" onClick={counterMinus}>-</p>
-                  <p className="qb-value" value={qty}>{qty}</p>
-                  <p className="qb-plus"onClick={counterPlus}>+</p>
-                </div>
-              </td>
-              <td className="proSub">288.0</td>
-              <td className="proDel">
-                <TiDeleteOutline className="proDelIcon" />
-              </td>
-            </tr>
+            {addedProducts !== undefined &&
+              !!addedProducts.length &&
+              addedProducts
+                .filter((item, i) => i >= 1)
+                .map((product, ind) => {
+                  console.log("id", product.Id);
+                  return (
+                    <Cart
+                      ind={ind}
+                      Photo={product.Photo}
+                      Title={product.Title}
+                      Price={product.Price}
+                      Id={product.Id}
+                    />
+                  );
+                })}
+
             <tr className="grandTotal">
               <td></td>
               <td></td>
@@ -83,7 +66,7 @@ export default function CartPage() {
                 <p className="gt-txt">Grand Total: </p>
               </td>
               <td>
-                <p className="gt-total">&#8380;576.00</p>
+                <p className="gt-total">&#8380; {total}</p>
               </td>
             </tr>
           </tbody>

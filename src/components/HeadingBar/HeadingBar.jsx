@@ -43,11 +43,7 @@ export default function HeadingBar() {
       window.removeEventListener("resize", setDimension);
     };
   }, [screenSize]);
-  useEffect(()=>{
-    // let fixedTop = refContainer.current;
-    console.log(window.scrollY);
-    let top = window.scrollY
-  },[])
+
 
   return (
     <div className="HeadNav">

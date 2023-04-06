@@ -5,10 +5,19 @@ import Brands from "../../components/Brands/Brands";
 import ShopSideBar from "../../components/shopSideBar/shopSideBar";
 import { HiViewGrid } from "react-icons/hi";
 import { MdViewList, MdOutlineFilterList, MdClose } from "react-icons/md";
-
+import { useSelector } from "react-redux";
 import { useState, useEffect, useRef } from "react";
 
 export default function ShopList() {
+  const [product, setProduct] = useState();
+  const addedProducts = useSelector((state)=>state['products']);
+  console.log(addedProducts);
+  useEffect(() => {
+    fetch("https://api.escuelajs.co/api/v1/products")
+      .then((res) => res.json())
+      .then((json) => setProduct(json));
+  }, []);
+
   // filter
   const [filterShow, setFilterShow] = useState(false);
   const handleFilterShow = () => {
@@ -43,11 +52,7 @@ export default function ShopList() {
     };
   }, [screenSize]);
 
-  // get width of element
-  const [elmWidth, setWidth] = useState(0);
-  useEffect(() => {
-    setWidth(refContainer.offsetWidth);
-  }, []);
+
 
   return (
     <div className="ShopList">
@@ -62,7 +67,6 @@ export default function ShopList() {
           <div className="filterButton">
             <button
               onClick={handleFilterShow}
-              // style={{ visibility: filterShow ? "hidden" : "visible" }}
             >
               <MdOutlineFilterList className="filterIcon-shop" />
               Filter
@@ -102,16 +106,31 @@ export default function ShopList() {
             <ShopSideBar ref={refContainer} />
           </div>
         )}
-        {/* style={{ width: `${90 - elmWidth}%`}} */}
+
         <div className="gridProducts" >
+        {product !== undefined &&
+          !!product.length &&
+          product
+            .filter((p, i) => i < 12)
+            .map((pr, index) => {
+              return (
+                <ShopListItemGrid
+                  key={index}
+                  id={pr["id"]}
+                  title={pr["title"]}
+                  price={pr["price"]}
+                  photo={pr["images"]}
+                />
+              );
+            })}
+          {/* <ShopListItemGrid id='1' title="Accumsan tincidunt" price="260.00" /> */}
+          {/* <ShopListItemGrid title="Accumsan tincidunt" price="260.00" />
           <ShopListItemGrid title="Accumsan tincidunt" price="260.00" />
           <ShopListItemGrid title="Accumsan tincidunt" price="260.00" />
           <ShopListItemGrid title="Accumsan tincidunt" price="260.00" />
           <ShopListItemGrid title="Accumsan tincidunt" price="260.00" />
           <ShopListItemGrid title="Accumsan tincidunt" price="260.00" />
-          <ShopListItemGrid title="Accumsan tincidunt" price="260.00" />
-          <ShopListItemGrid title="Accumsan tincidunt" price="260.00" />
-          <ShopListItemGrid title="Accumsan tincidunt" price="260.00" />
+          <ShopListItemGrid title="Accumsan tincidunt" price="260.00" /> */}
         </div>
       </div>
       <Brands />
