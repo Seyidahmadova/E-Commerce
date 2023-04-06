@@ -1,15 +1,17 @@
 import "./ShopListItemGrid.css";
-import item from "../../images/shopListItem/shopListItem.jpg";
 import { FiShoppingCart, FiHeart } from "react-icons/fi";
 import { BsArrowsFullscreen } from "react-icons/bs";
 import { IoIosGitCompare } from "react-icons/io";
 import { Link } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { addCartAction } from "../../redux/action/actions";
 
 export default function ShopListItemGrid(props) {
+  const dispatch = useDispatch()
   return (
     <div className="ShopListItemGrid" style={{ width: `${props.width}` }}>
       <div className="slig-img">
-        <img alt="item" src={item}></img>
+        <img alt="item" src={props.photo}></img>
         <div className="slig-adding">
             <p>
               <FiHeart className="addIcon heart" />
@@ -22,7 +24,7 @@ export default function ShopListItemGrid(props) {
             </p>
         </div>
         <div className="slig-addingCart">
-          <button>
+          <button onClick={()=>dispatch(addCartAction(props.id, props.title, props.price, props.photo))}>
             <FiShoppingCart className="addIcon cart" />
             Add to Cart
           </button>

@@ -1,5 +1,4 @@
 import React from "react";
-import Nav from "react-bootstrap/Nav";
 import { Link } from "react-router-dom";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
@@ -9,6 +8,7 @@ import NavbarPart from "./Navbar";
 import { slide as Menu } from "react-burger-menu";
 import { useState, useEffect, useRef } from "react";
 import "./HeadingBar.css";
+import { useLayoutEffect } from "react";
 
 export default function HeadingBar() {
   const [isOpen, setOpen] = useState(false);
@@ -23,7 +23,7 @@ export default function HeadingBar() {
     }
   };
 
-  const refContainer = useRef(null);
+  const refContainer = useRef();
   // get width of window
   const [screenSize, getDimension] = useState({
     dynamicWidth: window.innerWidth,
@@ -43,6 +43,7 @@ export default function HeadingBar() {
       window.removeEventListener("resize", setDimension);
     };
   }, [screenSize]);
+
 
   return (
     <div className="HeadNav">
