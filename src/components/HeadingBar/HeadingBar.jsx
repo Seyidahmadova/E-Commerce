@@ -9,6 +9,7 @@ import { slide as Menu } from "react-burger-menu";
 import { useState, useEffect, useRef } from "react";
 import "./HeadingBar.css";
 import { useLayoutEffect } from "react";
+import { useSelector } from "react-redux";
 
 export default function HeadingBar() {
   const [isOpen, setOpen] = useState(false);
@@ -22,6 +23,10 @@ export default function HeadingBar() {
       document.body.style.overflow = "auto";
     }
   };
+
+  const addedProducts1 = useSelector((state)=>state['products']);
+
+  var cardItem = addedProducts1.length-1;
 
   const refContainer = useRef();
   // get width of window
@@ -90,6 +95,9 @@ export default function HeadingBar() {
           <div>
             <Link to="/cart">
               <BsCart2 className="cardicon" />
+              <span className="card-length">
+                  {cardItem === 0 ? "" : cardItem}
+              </span>
             </Link>
           </div>
         </div>

@@ -22,6 +22,10 @@ import OrderHistory from "./pages/OrderHistory/OrderHistory";
 import HeadingBar from "./components/HeadingBar/HeadingBar";
 import Footer from "./components/Footer/Footer";
 function App() {
+
+
+
+
   return (
     <div className="App">
       <BrowserRouter>

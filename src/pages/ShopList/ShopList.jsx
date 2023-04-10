@@ -8,10 +8,18 @@ import { MdViewList, MdOutlineFilterList, MdClose } from "react-icons/md";
 import { useSelector } from "react-redux";
 import { useState, useEffect, useRef } from "react";
 
-export default function ShopList() {
+export default function ShopList(handleCard) {
   const [product, setProduct] = useState();
   const addedProducts = useSelector((state)=>state['products']);
   console.log(addedProducts);
+
+  // handleCard = addedProducts.length -1
+console.log(handleCard)
+  // for(let i=0; i<addedProducts.length;i++){
+  //   // handleCard.push(i)
+  // }
+
+  console.log(handleCard)
   useEffect(() => {
     fetch("https://api.escuelajs.co/api/v1/products")
       .then((res) => res.json())
@@ -43,6 +51,8 @@ export default function ShopList() {
       dynamicHeight: window.innerHeight,
     });
   };
+
+
 
   useEffect(() => {
     window.addEventListener("resize", setDimension);
@@ -113,6 +123,7 @@ export default function ShopList() {
           product
             .filter((p, i) => i < 12)
             .map((pr, index) => {
+              // console.log(index)
               return (
                 <ShopListItemGrid
                   key={index}

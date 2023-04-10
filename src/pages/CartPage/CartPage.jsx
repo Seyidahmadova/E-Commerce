@@ -1,27 +1,28 @@
 import "./CartPage.css";
 import { useState } from "react";
 import PagePath from "../../components/PagePath/PagePath";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import { useEffect } from "react";
 import Cart from "./cart";
 
 export default function CartPage() {
   const addedProducts = useSelector((state) => state["products"]);
-  console.log("added", addedProducts);
-  const [subtotal, setSubtotal] = useState(0);
+
+
   const [total, setTotal] = useState(0);
+
   const handleTotal = (value) => {
     setTotal(total + value);
   };
+
   useEffect(() => {
-    addedProducts !== undefined &&
-      !!addedProducts.length &&
-      addedProducts
-        .filter((i) => i >= 1)
-        .map((product) => {
-          handleTotal(product.Price);
-          console.log(product.Price);
-        });
+    // addedProducts !== undefined &&
+    //   !!addedProducts.length &&
+    //   addedProducts
+    //     .filter((i) => i >= 1)
+    //     .map((product) => {
+          
+    //     });
   });
 
   return (
@@ -45,14 +46,15 @@ export default function CartPage() {
               addedProducts
                 .filter((item, i) => i >= 1)
                 .map((product, ind) => {
-                  console.log("id", product.Id);
                   return (
                     <Cart
+                      key={product.Id}
                       ind={ind}
                       Photo={product.Photo}
                       Title={product.Title}
                       Price={product.Price}
                       Id={product.Id}
+                      handleTotal={handleTotal}
                     />
                   );
                 })}

@@ -33,34 +33,6 @@
   align-items: center;
 }
 
-/* .innerheading {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.phoneandmail {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 10%;
-  margin-left: 10%;
-}
-
-.phone,
-.mail {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 180px;
-}
-
-.mailcol,
-.phonecol {
-  display: flex;
-  align-items: center;
-} */
 
 .headerdroplist {
   display: flex;
@@ -116,6 +88,13 @@
   width: 20px;
   height: 20px;
   margin-top: -7px;
+}
+
+
+.card-length {
+  color: white;
+  position: absolute;
+  top: 0.7px;
 }
 
 @media (max-width: 991.5px) {

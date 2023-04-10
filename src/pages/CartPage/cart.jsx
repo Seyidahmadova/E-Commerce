@@ -1,28 +1,30 @@
 import "./CartPage.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { TiDeleteOutline } from "react-icons/ti";
 import { useDispatch } from "react-redux";
 import { removeCartAction } from "../../redux/action/actions";
-import { useEffect } from "react";
 
 export default function Cart(props) {
-    const [subtotal, setSubtotal ] = useState(0)
-  const [total, setTotal] = useState(0);
-  const handleTotal = (value) => {
-    setTotal(total + value);
-  };
+  useEffect(() => {
+
+    // props.handleTotal(props.Price)
+  });
 
   const dispatch = useDispatch();
   const [qty, setQty] = useState(1);
+
   function counterMinus() {
     if (qty === 1) {
       setQty(1);
+      props.handleTotal(props.Price);
     } else {
       setQty(qty - 1);
+      props.handleTotal(props.Price * (qty - 1));
     }
   }
   function counterPlus() {
     setQty(qty + 1);
+    props.handleTotal(props.Price * (qty + 1));
   }
 
   return (
@@ -47,7 +49,7 @@ export default function Cart(props) {
           </p>
         </div>
       </td>
-      <td className="proSub"> {qty * props.Price}</td>
+      <td className="proSub"> {props.Price * qty}</td>
       <td className="proDel">
         <TiDeleteOutline
           onClick={() => dispatch(removeCartAction(props.Id))}

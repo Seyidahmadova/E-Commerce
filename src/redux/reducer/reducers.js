@@ -2,7 +2,7 @@ import { ACTION_TYPES } from "../action/actionTypes";
 import { combineReducers } from 'redux';
 
 const initialState = {
-  products: [{ Id: "", Pitle: "", Price: "", Photo: "" }],
+  products: [{ Id: "", Title: "", Price: "", Photo: ""}],
 };
 
 export function Reducers(state = initialState, action) {
